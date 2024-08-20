@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Base Styles for TextField and Select Components */
+.MuiTextField-root, 
+.MuiSelect-root, 
+.MuiInputLabel-root, 
+.MuiOutlinedInput-root, 
+.MuiOutlinedInput-notchedOutline, 
+.MuiFormControl-root {
+  color: white;
+  border-color: white;
+}
+
+/* Always Visible Borders */
+.MuiOutlinedInput-root fieldset {
+  border-color: white !important;
+}
+
+/* Specific States */
+.MuiOutlinedInput-root:hover fieldset, 
+.MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: white !important;
+}
+
+/* Container and Flexbox Layout */
+.container-md {
+  margin-top: 8px;
+  text-align: center;
+  position: relative;
+}
+/* Ensure text and border colors are white for the TextField */
+.text-field .MuiOutlinedInput-root {
+  color: white; /* Text color inside the input */
+  border-color: white; /* Border color */
+}
+
+.text-field .MuiOutlinedInput-notchedOutline {
+  border-color: white; /* Border color for the outline */
+}
+
+.text-field .MuiInputLabel-root {
+  color: white; /* Label text color */
+}
+
+/* Ensure hover and focus states also have white borders */
+.text-field .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
+.text-field .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+
+.flex-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+/* Prompt Section Styling */
+.generated-prompt {
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+/* Accordion Styles */
+.accordion-summary {
+  background-color: #04021b;
+  color: white;
+}
+
+.accordion-details {
+  background-color: #04021b;
+}
+
+.MuiAccordionSummary-root:hover {
+  background-color: #04021b;
+}
+
+.MuiAccordionSummary-root.Mui-expanded {
+  background-color: #282c34;
+}
+
+/* Additional Styling */
+.theme-manager-box {
+  margin-top: 2rem;
+}
+
+.weight-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weight-field {
+  width: 180px;
+}

@@ -1,0 +1,363 @@
+{
+    "mathematicalConcepts": [
+      {
+        "category": "Mathematical Sequences and Ratios",
+        "items": [
+          { "name": "Arithmetic Sequence" },
+          { "name": "Geometric Sequence" },
+          { "name": "Harmonic Sequence" },
+          { "name": "Lucas Sequence" },
+          { "name": "Triangular Numbers" },
+          { "name": "Square Numbers" },
+          { "name": "Pentagonal Numbers" },
+          { "name": "Golden Ratio Sequence" },
+          { "name": "Catalan Numbers" },
+          { "name": "Pell Numbers" },
+          { "name": "Sylvester's Sequence" },
+          { "name": "Factorial Sequence" },
+          { "name": "Fibonacci-Lucas Sequence" },
+          { "name": "Eulerian Numbers" },
+          { "name": "Padovan Sequence" }
+        ]
+      },
+      {
+        "category": "Fractals and Recursive Patterns",
+        "items": [
+          { "name": "Mandelbrot Set" },
+          { "name": "Koch Snowflake" },
+          { "name": "Sierpinski Triangle" },
+          { "name": "Lindenmayer Systems (L-Systems)" },
+          { "name": "Julia Sets" },
+          { "name": "Cantor Set" },
+          { "name": "Barnsley Fern" },
+          { "name": "Dragon Curve" },
+          { "name": "Hilbert Curve" },
+          { "name": "Apollonian Gasket" },
+          { "name": "Fractals in Nature" },
+          { "name": "Fractal Flames" },
+          { "name": "Quaternion Fractals" },
+          { "name": "Cantor Dust" }
+        ]
+      },
+      {
+        "category": "Geometric Transformations and Surfaces",
+        "items": [
+          { "name": "Klein Bottle" },
+          { "name": "Mobius Strip" },
+          { "name": "Circle Inversion" },
+          { "name": "Platonic Solids" },
+          { "name": "Celtic Knots" },
+          { "name": "Penrose Tiling" },
+          { "name": "Bezier Curves" },
+          { "name": "Spirograph Patterns" },
+          { "name": "Tessellations" },
+          { "name": "Lissajous Curves" },
+          { "name": "Turing Machines" }
+        ]
+      },
+      {
+        "category": "Algorithmic Patterns and Systems",
+        "items": [
+          { "name": "Recursion" },
+          { "name": "Voronoi Diagrams" },
+          { "name": "Turing Patterns" },
+          { "name": "Bifurcation Diagram" },
+          { "name": "Symmetry Groups" },
+          { "name": "Platonic Knots" }
+        ]
+      },
+      {
+        "category": "Advanced Geometric Structures",
+        "items": [
+          { "name": "Hyperbolic Geometry" },
+          { "name": "Non-Euclidean Geometry" },
+          { "name": "Poincaré Disk" },
+          { "name": "Hyperbolic Paraboloids" },
+          { "name": "Polytopes" },
+          { "name": "Affine Transformations" },
+          { "name": "Chaotic Attractors" },
+          { "name": "Wolfram's Rule 30" },
+          { "name": "Cellular Automata" },
+          { "name": "Hypercomplex Fractals" },
+          { "name": "Algebraic Curves" },
+          { "name": "Self-Avoiding Walks" },
+          { "name": "Hexaflexagons" },
+          { "name": "Polyhedral Dice" },
+          { "name": "Magic Squares" },
+          { "name": "Logarithmic Spirals" },
+          { "name": "Fermat's Spiral" },
+          { "name": "Braids and Knots" },
+          { "name": "Euler's Formula" },
+          { "name": "Golden Spiral" },
+          { "name": "Catenary Curves" },
+          { "name": "Rose Curves" },
+          { "name": "Toroidal Shapes" },
+          { "name": "Star Polygons" },
+          { "name": "Hilbert Space" },
+          { "name": "Hyperbolic Paraboloids" },
+          { "name": "De Bruijn Sequences" },
+          { "name": "Fibonacci Circles" },
+          { "name": "Kaleidoscope Patterns" },
+          { "name": "Circle Packing" },
+          { "name": "Non-Euclidean Geometry" },
+          { "name": "Thue-Morse Sequence" },
+          { "name": "Geodesic Domes" },
+          { "name": "Isohedral Tilings" },
+          { "name": "Spheroids" },
+          { "name": "Lissajous Knots" },
+          { "name": "Cycloids" },
+          { "name": "Möbius Transformations" },
+          { "name": "Complex Plane Fractals" },
+          { "name": "Fractal Mountains" },
+          { "name": "Platonic Fractals" },
+          { "name": "Irrational Tilings" },
+          { "name": "Symmetric Trees" },
+          { "name": "Hypercubes" },
+          { "name": "Tessellation Art" },
+          { "name": "Anamorphic Art" },
+          { "name": "Orbits of the Moon" },
+          { "name": "Equilateral Tilings" },
+          { "name": "Quaternion Rotations" },
+          { "name": "Heesch Tilings" },
+          { "name": "Schottky Group Fractals" },
+          { "name": "Voronoi Noise" },
+          { "name": "Flame Algorithms" },
+          { "name": "Reuleaux Triangles" },
+          { "name": "Coxeter Fractals" },
+          { "name": "Cubic Lattices" },
+          { "name": "Lattice Structures" },
+          { "name": "Icospheres" },
+          { "name": "Sudoku Grids" },
+          { "name": "Magic Hexagons" },
+          { "name": "Unicursal Patterns" },
+          { "name": "Necker Cubes" },
+          { "name": "Tesseracts" },
+          { "name": "Crystal Lattices" },
+          { "name": "Riemann Surfaces" },
+          { "name": "Weierstrass Function" },
+          { "name": "Strange Attractors" },
+          { "name": "Lemniscates" },
+          { "name": "Conway's Game of Life" },
+          { "name": "Binary Trees" },
+          { "name": "Lichtenberg Figures" },
+          { "name": "Bezier Surface" },
+          { "name": "Vector Fields" },
+          { "name": "Circular Harmonics" },
+          { "name": "Periodic Tilings" },
+          { "name": "Hypotrochoids" },
+          { "name": "Epicycloids" },
+          { "name": "Astroids" },
+          { "name": "Euler Spirals" },
+          { "name": "Elliptical Orbits" },
+          { "name": "Magic Stars" },
+          { "name": "Aperiodic Crystals" },
+          { "name": "Pappus Chains" },
+          { "name": "Elliptical Integrals" },
+          { "name": "Platonic Knots" },
+          { "name": "Magic Tesseracts" },
+          { "name": "Space-Filling Curves" },
+          { "name": "Grassmann Algebra" },
+          { "name": "Quaternion Julia Sets" },
+          { "name": "Platonic Lattices" },
+          { "name": "Neural Networks" },
+          { "name": "Hexagonal Packing" },
+          { "name": "Symmetry Breaking" },
+          { "name": "Dual Polyhedra" },
+          { "name": "Isogonal Figures" },
+          { "name": "Non-Convex Shapes" },
+          { "name": "Zome Models" },
+          { "name": "Hexagonal Grids" },
+          { "name": "Vector Equilibria" },
+          { "name": "Octahedral Tilings" },
+          { "name": "Klein Surfaces" },
+          { "name": "Mathematical Weaving" },
+          { "name": "Hyperbolic Tessellations" },
+          { "name": "Orthogonal Grids" },
+          { "name": "Snub Polyhedra" },
+          { "name": "Platonic Surfaces" },
+          { "name": "Hamiltonian Circuits" },
+          { "name": "Spherical Tilings" },
+          { "name": "Meander Patterns" },
+          { "name": "Necker Tessellations" },
+          { "name": "Gosper Curves" },
+          { "name": "Magic Cubes" },
+          { "name": "Cubic Transformations" },
+          { "name": "Mobius Lattice" },
+          { "name": "Affine Geometry" }
+        ]
+      },
+      {
+        "category": "Symmetry and Asymmetry",
+        "items": [
+          { "name": "Symmetry Groups" },
+          { "name": "Reflection Symmetry" },
+          { "name": "Rotational Symmetry" },
+          { "name": "Bilateral Symmetry" },
+          { "name": "Asymmetrical Designs" },
+          { "name": "Symmetry Breaking" }
+        ]
+      },
+      {
+        "category": "Topological Phenomena",
+        "items": [
+          { "name": "Möbius Strip" },
+          { "name": "Klein Bottle" },
+          { "name": "Tesseracts (4D Cubes)" },
+          { "name": "Euler Characteristic" },
+          { "name": "Homotopy and Homology" },
+          { "name": "Topological Insulators" }
+        ]
+      },
+      {
+        "category": "Chaos and Order",
+        "items": [
+          { "name": "Lorenz Attractor" },
+          { "name": "Strange Attractors" },
+          { "name": "Chaos Theory" },
+          { "name": "Bifurcation Diagrams" },
+          { "name": "Fractal Boundaries" },
+          { "name": "Entropy and Negentropy" }
+        ]
+      },
+      {
+        "category": "Quantum Mechanics and Uncertainty",
+        "items": [
+          { "name": "Schrödinger's Cat" },
+          { "name": "Heisenberg Uncertainty Principle" },
+          { "name": "Quantum Superposition" },
+          { "name": "Wave-Particle Duality" },
+          { "name": "Quantum Entanglement" },
+          { "name": "Feynman Diagrams" }
+        ]
+      },
+      {
+        "category": "Dimensionality and Multiverses",
+        "items": [
+          { "name": "Higher Dimensions (4D, 5D, etc.)" },
+          { "name": "Multiverse Theory" },
+          { "name": "Calabi-Yau Manifolds" },
+          { "name": "String Theory" },
+          { "name": "Hyperspheres" },
+          { "name": "Dimensional Reduction" }
+        ]
+      },
+      {
+        "category": "Patterns in Nature",
+        "items": [
+          { "name": "Fibonacci Spirals in Sunflowers" },
+          { "name": "Fractals in Coastlines and Rivers" },
+          { "name": "Crystal Lattice Structures" },
+          { "name": "Leaf Venation Patterns" },
+          { "name": "Spirals in Galaxies" },
+          { "name": "Patterns in Animal Coats (Stripes, Spots)" }
+        ]
+      },
+      {
+        "category": "Mathematical Paradoxes",
+        "items": [
+          { "name": "Zeno's Paradoxes" },
+          { "name": "The Banach-Tarski Paradox" },
+          { "name": "The Liar Paradox" },
+          { "name": "Russell's Paradox" },
+          { "name": "Hilbert's Hotel" },
+          { "name": "The Barber Paradox" }
+        ]
+      },
+      {
+        "category": "Computational Art and Algorithmic Aesthetics",
+        "items": [
+          { "name": "Generative Art" },
+          { "name": "Algorithmic Music Composition" },
+          { "name": "Cellular Automata in Art" },
+          { "name": "Procedural Generation" },
+          { "name": "Random Walks and Brownian Motion" },
+          { "name": "Evolutionary Algorithms in Design" }
+        ]
+      },
+      {
+        "category": "Astronomical Geometry",
+        "items": [
+          { "name": "Elliptical Orbits" },
+          { "name": "Kepler's Laws" },
+          { "name": "Spherical Harmonics" },
+          { "name": "Celestial Mechanics" },
+          { "name": "Tidal Forces and Roche Limits" },
+          { "name": "Great Circles and Orbital Planes" }
+        ]
+      },
+
+      {
+        "category": "Metamathematics and Gödel's Incompleteness",
+        "items": [
+          { "name": "Gödel's Incompleteness Theorems" },
+          { "name": "Turing Machines and the Halting Problem" },
+          { "name": "The Entscheidungsproblem" },
+          { "name": "The Curry-Howard Correspondence" },
+          { "name": "Category Theory and Foundations of Mathematics" },
+          { "name": "The Axiom of Choice" }
+        ]
+      },    
+      {
+        "category": "Optical Illusions and Visual Phenomena",
+        "items": [
+          { "name": "Impossible Objects (Penrose Triangle, Escher's Stairs)" },
+          { "name": "Necker Cube" },
+          { "name": "Ambiguous Figures (Rubin's Vase, Duck-Rabbit Illusion)" },
+          { "name": "Müller-Lyer Illusion" },
+          { "name": "Hering Illusion" },
+          { "name": "Checker Shadow Illusion" },
+          { "name": "Poggendorff Illusion" },
+          { "name": "Ebbinghaus Illusion (Titchener Circles)" },
+          { "name": "Motion Illusions (Rotating Snakes, Spinning Dancer)" },
+          { "name": "Café Wall Illusion" },
+          { "name": "Color Constancy and the Dress" }
+        ]
+      },
+      {
+        "category": "Biological Computation and Neural Networks",
+        "items": [
+          { "name": "Neural Network Architectures" },
+          { "name": "Artificial Life (ALife)" },
+          { "name": "Genetic Algorithms" },
+          { "name": "Hopfield Networks" },
+          { "name": "Neuronal Dynamics and Brain Waves" },
+          { "name": "Computational Neuroscience" }
+        ]
+      },
+      {
+        "category": "Sacred Geometry",
+        "items": [
+          { "name": "The Flower of Life" },
+          { "name": "Metatron's Cube" },
+          { "name": "The Tree of Life (Kabbalah)" },
+          { "name": "The Sri Yantra" },
+          { "name": "Vesica Piscis" },
+          { "name": "The Geometry of Mandalas" }
+        ]
+      },
+      {
+        "category": "Cognitive Science and Perception",
+        "items": [
+          { "name": "Perceptual Illusions" },
+          { "name": "Gestalt Principles" },
+          { "name": "Bayesian Models of Perception" },
+          { "name": "Information Processing in the Brain" },
+          { "name": "Theories of Consciousness (Integrated Information Theory, Global Workspace Theory)" },
+          { "name": "The Mathematics of Attention and Memory" }
+        ]
+      },
+      {
+        "category": "Temporal Mechanics and Time Travel",
+        "items": [
+          { "name": "Closed Timelike Curves" },
+          { "name": "Time Dilation and Relativity" },
+          { "name": "Paradoxes of Time Travel (Grandfather Paradox, Bootstrap Paradox)" },
+          { "name": "Causal Loops" },
+          { "name": "The Arrow of Time and Entropy" },
+          { "name": "Chronotopes in Literature and Art" }
+        ]
+      }
+      
+    ]
+  }
+  
