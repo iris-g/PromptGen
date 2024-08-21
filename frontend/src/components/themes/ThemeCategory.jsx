@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Typography, Button, Grid, Collapse, IconButton } from '@mui/material';
+import { Box, Typography, Button, Collapse, IconButton } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const ThemeCategory = ({ category, items, selectedItems, handleItemClick }) => {
@@ -11,8 +11,8 @@ const ThemeCategory = ({ category, items, selectedItems, handleItemClick }) => {
 
   return (
     <Box sx={{ mb: 2 }}>
-      <Box sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }} onClick={handleToggle}>
-        <Typography variant="h6" sx={{ color: 'white', flexGrow: 1, textAlign: 'left' }}>
+      <Box sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer', flexWrap: 'wrap', gap: 2 }} onClick={handleToggle}>
+        <Typography variant="h6" sx={{ color: 'white', textAlign: 'left' }}>
           {category}
         </Typography>
         <IconButton>
@@ -25,28 +25,27 @@ const ThemeCategory = ({ category, items, selectedItems, handleItemClick }) => {
           />
         </IconButton>
       </Box>
-
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <Grid container spacing={2} sx={{ mt: 1, justifyContent: 'flex-start' }}>
-          {items.map((item) => (
-            <Grid item key={item}>
-              <Button
-                variant={selectedItems.includes(item) ? 'contained' : 'outlined'}
-                color="primary"
-                onClick={() => handleItemClick(item)}
-                sx={{
-                  textTransform: 'capitalize',
-                  minWidth: '150px',
-                  transition: 'background-color 0.3s ease',
-                  color: 'white',
-                }}
-              >
-                {item}
-              </Button>
-            </Grid>
-          ))}
-        </Grid>
-      </Collapse>
+  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, mt: 1 }}>
+    {items.map((item) => (
+      <Button
+        key={item}
+        variant={selectedItems.includes(item) ? 'contained' : 'outlined'}
+        color="primary"
+        onClick={() => handleItemClick(item)}
+        sx={{
+          textTransform: 'capitalize',
+          minWidth: '150px',
+          transition: 'background-color 0.3s ease',
+          color: 'white',
+        }}
+      >
+        {item}
+      </Button>
+    ))}
+  </Box>
+</Collapse>
+
     </Box>
   );
 };

@@ -21,8 +21,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Virtual environments
-/backend/venv/
+
+/frontend/src/assets
 
 # IDE and editor specific files
 .vscode/

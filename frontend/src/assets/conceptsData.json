@@ -359,5 +359,339 @@
       }
       
     ]
+,
+"details": [
+  {
+    "category": "Art Medium",
+    "items": [
+      { "name": "Oil Painting" },
+      { "name": "Watercolor" },
+      { "name": "Digital Art" },
+      { "name": "Charcoal Drawing" },
+      { "name": "Acrylic Painting" },
+      { "name": "Ink Wash" },
+      { "name": "Mixed Media" }
+    ]
+  },
+  {
+    "category": "Camera",
+    "items": [
+      { "name": "Film Photography" },
+      { "name": "Digital Photography" },
+      { "name": "DSLR" },
+      { "name": "Mirrorless Camera" },
+      { "name": "Polaroid" },
+      { "name": "Macro Photography" },
+      { "name": "Wide Angle Lens" }
+    ]
+  },
+  {
+    "category": "Color",
+    "items": [
+      { "name": "Monochrome" },
+      { "name": "Vibrant Colors" },
+      { "name": "Muted Tones" },
+      { "name": "Sepia Tone" },
+      { "name": "Color Grading" },
+      { "name": "Pastel Colors" },
+      { "name": "High Contrast" }
+    ]
+  },
+  {
+    "category": "Dimensionality",
+    "items": [
+      { "name": "2D Art" },
+      { "name": "3D Rendering" },
+      { "name": "Isometric View" },
+      { "name": "Perspective Drawing" },
+      { "name": "Stereoscopic 3D" },
+      { "name": "Virtual Reality" },
+      { "name": "Cubism" }
+    ]
+  },
+  {
+    "category": "Display",
+    "items": [
+      { "name": "Framed Art" },
+      { "name": "Gallery Exhibition" },
+      { "name": "Public Installation" },
+      { "name": "Digital Screen" },
+      { "name": "Holographic Display" },
+      { "name": "Projection Mapping" },
+      { "name": "Outdoor Billboard" }
+    ]
+  },
+  {
+    "category": "Geometry",
+    "items": [
+      { "name": "Geometric Shapes" },
+      { "name": "Abstract Forms" },
+      { "name": "Symmetry" },
+      { "name": "Fractal Geometry" },
+      { "name": "Minimalism" },
+      { "name": "Sacred Geometry" },
+      { "name": "Tessellation" }
+    ]
+  },
+  {
+    "category": "Intangibles",
+    "items": [
+      { "name": "Emotion" },
+      { "name": "Mood" },
+      { "name": "Conceptual Art" },
+      { "name": "Metaphor" },
+      { "name": "Allegory" },
+      { "name": "Narrative" },
+      { "name": "Symbolism" }
+    ]
+  },
+  {
+    "category": "Lighting",
+    "items": [
+      { "name": "Natural Lighting" },
+      { "name": "Studio Lighting" },
+      { "name": "Candlelight" },
+      { "name": "Backlighting" },
+      { "name": "High-Key Lighting" },
+      { "name": "Low-Key Lighting" },
+      { "name": "Chiaroscuro" }
+    ]
+  },
+  {
+    "category": "Material",
+    "items": [
+      { "name": "Canvas" },
+      { "name": "Wood Panel" },
+      { "name": "Metallic Surface" },
+      { "name": "Glass" },
+      { "name": "Paper" },
+      { "name": "Textile" },
+      { "name": "Stone" }
+    ]
+  },
+  {
+    "category": "Post-processing",
+    "items": [
+      { "name": "Photoshop Effects" },
+      { "name": "Color Correction" },
+      { "name": "Digital Retouching" },
+      { "name": "Blurring" },
+      { "name": "Sharpening" },
+      { "name": "Noise Reduction" },
+      { "name": "Texture Overlay" }
+    ]
+  },
+  {
+    "category": "Advanced",
+    "items": [
+      { "name": "AI-Generated Art" },
+      { "name": "Deep Dream" },
+      { "name": "Neural Style Transfer" },
+      { "name": "Generative Adversarial Networks (GANs)" },
+      { "name": "Algorithmic Patterning" },
+      { "name": "Fractal Art" },
+      { "name": "Procedural Texturing" }
+    ]
+  },
+  {
+    "category": "Mimic the style of an artist",
+    "items": [
+      { "name": "Van Gogh" },
+      { "name": "Picasso" },
+      { "name": "Monet" },
+      { "name": "Frida Kahlo" },
+      { "name": "Salvador Dalí" },
+      { "name": "Leonardo da Vinci" },
+      { "name": "Andy Warhol" }
+    ]
+  }
+]
+,"artMovements":[
+  {
+    "category": "Renaissance",
+    "items": [
+      { "name": "High Renaissance" },
+      { "name": "Early Renaissance" },
+      { "name": "Mannerism" },
+      { "name": "Northern Renaissance" },
+      { "name": "Italian Renaissance" }
+    ]
+  },
+  {
+    "category": "Baroque",
+    "items": [
+      { "name": "Caravaggism" },
+      { "name": "Flemish Baroque" },
+      { "name": "Dutch Golden Age" },
+      { "name": "Spanish Baroque" },
+      { "name": "Baroque Sculpture" }
+    ]
+  },
+  {
+    "category": "Romanticism",
+    "items": [
+      { "name": "Dark Romanticism" },
+      { "name": "Neoclassicism" },
+      { "name": "Symbolism" },
+      { "name": "Pre-Raphaelite Brotherhood" },
+      { "name": "Romantic Landscape" }
+    ]
+  },
+  {
+    "category": "Impressionism",
+    "items": [
+      { "name": "Post-Impressionism" },
+      { "name": "Pointillism" },
+      { "name": "Neo-Impressionism" },
+      { "name": "American Impressionism" },
+      { "name": "Impressionist Sculpture" }
+    ]
+  },
+  {
+    "category": "Modernism",
+    "items": [
+      { "name": "Cubism" },
+      { "name": "Fauvism" },
+      { "name": "Expressionism" },
+      { "name": "Surrealism" },
+      { "name": "Abstract Expressionism" }
+    ]
+  },
+  {
+    "category": "Art Nouveau",
+    "items": [
+      { "name": "Vienna Secession" },
+      { "name": "Jugendstil" },
+      { "name": "Modern Style" },
+      { "name": "Glasgow Style" },
+      { "name": "Stile Liberty" }
+    ]
+  },
+  {
+    "category": "Art Deco",
+    "items": [
+      { "name": "Streamline Moderne" },
+      { "name": "Miami Art Deco" },
+      { "name": "Skyscraper Deco" },
+      { "name": "Zigzag Moderne" },
+      { "name": "French Art Deco" }
+    ]
+  },
+  {
+    "category": "Surrealism",
+    "items": [
+      { "name": "Dada" },
+      { "name": "Magic Realism" },
+      { "name": "Dreamscapes" },
+      { "name": "Automatism" },
+      { "name": "Frottage and Decalcomania" }
+    ]
+  },
+  {
+    "category": "Contemporary Art",
+    "items": [
+      { "name": "Street Art" },
+      { "name": "Pop Art" },
+      { "name": "Conceptual Art" },
+      { "name": "Minimalism" },
+      { "name": "Digital Art" }
+    ]
+  },
+  {
+    "category": "Postmodernism",
+    "items": [
+      { "name": "Neo-Expressionism" },
+      { "name": "Appropriation Art" },
+      { "name": "Installation Art" },
+      { "name": "Performance Art" },
+      { "name": "Deconstructivism" }
+    ]
+  }
+
+]
+,"scienceAndTechnology": [
+  {
+    "category": "Space Exploration",
+    "items": [
+      { "name": "Spacecraft Design" },
+      { "name": "Alien Landscapes" },
+      { "name": "Space Stations and Colonies" },
+      { "name": "Black Holes and Nebulae" },
+      { "name": "Exoplanets and Distant Stars" },
+      { "name": "Asteroid Mining" },
+      { "name": "Terraforming Planets" },
+      { "name": "Wormholes and Time Dilation" },
+      { "name": "Space Tourism" }
+    ]
+  },
+  {
+    "category": "Robotics and AI",
+    "items": [
+      { "name": "Humanoid Robots" },
+      { "name": "Cybernetics" },
+      { "name": "AI in Society" },
+      { "name": "Robot Companions" },
+      { "name": "Autonomous Vehicles" },
+      { "name": "Robotic Exoskeletons" },
+      { "name": "AI Art and Creativity" },
+      { "name": "Robotics in Medicine" }
+    ]
+  },
+  {
+    "category": "Futurism",
+    "items": [
+      { "name": "Smart Cities" },
+      { "name": "Technological Utopias/Dystopias" },
+      { "name": "Future Transportation" },
+      { "name": "Nanotechnology" },
+      { "name": "Virtual Reality Worlds" },
+      { "name": "Augmented Reality Interfaces" },
+      { "name": "Transhumanism" },
+      { "name": "Artificial Intelligence Ethics" }
+    ]
+  }
+],
+"psychologyAndHumanExperience": [
+  {
+    "category": "Dreamscapes",
+    "items": [
+      { "name": "Lucid Dreams" },
+      { "name": "Surreal Environments" },
+      { "name": "Nightmares and Fantasies" },
+      { "name": "Symbolic Imagery" },
+      { "name": "Recurring Dreams" },
+      { "name": "Dreamlike Realities" },
+      { "name": "Shapeshifting Worlds" },
+      { "name": "Dream Interpretation" }
+    ]
+  },
+  {
+    "category": "Emotional States",
+    "items": [
+      { "name": "Abstract Depictions of Emotions" },
+      { "name": "The Human Condition" },
+      { "name": "Mental Health Awareness" },
+      { "name": "Inner Worlds" },
+      { "name": "Joy and Euphoria" },
+      { "name": "Grief and Loss" },
+      { "name": "Anxiety and Fear" },
+      { "name": "Love and Affection" }
+    ]
+  },
+  {
+    "category": "Cognitive Science",
+    "items": [
+      { "name": "Brain Networks" },
+      { "name": "Perception and Reality" },
+      { "name": "Memory Palaces" },
+      { "name": "Decision-Making Processes" },
+      { "name": "Cognitive Biases" },
+      { "name": "Artificial Intelligence and Cognition" },
+      { "name": "Consciousness and Awareness" },
+      { "name": "Neuroplasticity" }
+    ]
+  }
+]
+    
   }
   

@@ -15,16 +15,18 @@ const PromptBuilder = () => {
   const [imageURL, setImageURL] = useState('');
   const [aspectRatio, setAspectRatio] = useState('');
   const [stylize, setStylize] = useState('');
+  const [remove, setRemove] = useState('');
   const [weird, setWeird] = useState('');
   const [sref, setSref] = useState('');
   const [version, setVersion] = useState('');
   const [selectedItems, setSelectedItems] = useState([]); // Initialize as an array
   const promptRef = useRef(null);
 
-  const updatePromptDebounced = debounce((text, weight, url, ar, s, w, ref, ver, items) => {
+  const updatePromptDebounced = debounce((text, weight, url, ar, s, w, ref, ver, items, rem) => {
     const weightText = weight !== 1.0 ? `::${weight}` : '';
     const aspectRatioText = ar ? ` --ar ${ar}` : '';
     const stylizeText = s ? ` --s ${s}` : '';
+    const remove = rem? ` --no ${rem}` : '';
     const weirdText = w ? ` --w ${w}` : '';
     const srefText = ref ? ` --sref ${ref}` : '';
     const versionText = ver ? ` --version ${ver}` : '';
@@ -32,81 +34,85 @@ const PromptBuilder = () => {
     
     // Even if no text is provided, itemsText should still be included
     const updatedText = text ? `${text}${weightText}${itemsText}` : `${itemsText}`;
-    const updatedPrompt = `${url ? `${url} ` : ''}${updatedText}${aspectRatioText}${stylizeText}${weirdText}${srefText}${versionText}`;
+    const updatedPrompt = `${url ? `${url} ` : ''}${updatedText}${aspectRatioText}${stylizeText}${weirdText}${srefText}${versionText}${remove}`;
     
     setPrompt(updatedPrompt.trim());
 }, 300);
-
-  const handleCustomTextChange = (event) => {
-    const newText = event.target.value;
-    setCustomText(newText);
-    updatePromptDebounced(newText, weight, imageURL, aspectRatio, stylize, weird, sref, version, selectedItems);
-  };
-
-  const handleWeightChange = (event) => {
-    const newWeight = event.target.value;
-    setWeight(newWeight);
-    updatePromptDebounced(customText, newWeight, imageURL, aspectRatio, stylize, weird, sref, version, selectedItems);
-  };
-
-  const handleImageURLChange = (event) => {
-    const newImageURL = event.target.value;
-    setImageURL(newImageURL);
-    updatePromptDebounced(customText, weight, newImageURL, aspectRatio, stylize, weird, sref, version, selectedItems);
-  };
-
-  const handleAspectRatioChange = (event) => {
-    const newAspectRatio = event.target.value;
-    setAspectRatio(newAspectRatio);
-    updatePromptDebounced(customText, weight, imageURL, newAspectRatio, stylize, weird, sref, version, selectedItems);
-  };
-
-  const handleStylizeChange = (event) => {
-    const newStylize = event.target.value;
-    setStylize(newStylize);
-    updatePromptDebounced(customText, weight, imageURL, aspectRatio, newStylize, weird, sref, version, selectedItems);
-  };
-
-  const handleWeirdChange = (event) => {
-    const newWeird = event.target.value;
-    setWeird(newWeird);
-    updatePromptDebounced(customText, weight, imageURL, aspectRatio, stylize, newWeird, sref, version, selectedItems);
-  };
-
-  const handleSrefChange = (event) => {
-    const newSref = event.target.value;
-    setSref(newSref);
-    updatePromptDebounced(customText, weight, imageURL, aspectRatio, stylize, weird, newSref, version, selectedItems);
-  };
-
-  const handleVersionChange = (event) => {
-    const newVersion = event.target.value;
-    setVersion(newVersion);
-    updatePromptDebounced(customText, weight, imageURL, aspectRatio, stylize, weird, sref, newVersion, selectedItems);
-  };
-
-  const handlePromptChange = (event) => {
-    const newPrompt = event.target.value;
-    setPrompt(newPrompt);
-  };
-
-  const handleItemClick = (item) => {
-    const updatedItems = selectedItems.includes(item)
-      ? selectedItems.filter((i) => i !== item)
-      : [...selectedItems, item];
-  
-    setSelectedItems(updatedItems);
-
-    // Call updatePromptDebounced with the updated items
-    updatePromptDebounced(customText, weight, imageURL, aspectRatio, stylize, weird, sref, version, updatedItems);
+const handleCustomTextChange = (event) => {
+  const newText = event.target.value;
+  setCustomText(newText);
+  updatePromptDebounced(newText, weight, imageURL, aspectRatio, stylize, weird, sref, version, selectedItems, remove);
 };
 
-  
-  const copyToClipboard = () => {
-    if (promptRef.current) {
+const handleWeightChange = (event) => {
+  const newWeight = event.target.value;
+  setWeight(newWeight);
+  updatePromptDebounced(customText, newWeight, imageURL, aspectRatio, stylize, weird, sref, version, selectedItems, remove);
+};
+
+const handleImageURLChange = (event) => {
+  const newImageURL = event.target.value;
+  setImageURL(newImageURL);
+  updatePromptDebounced(customText, weight, newImageURL, aspectRatio, stylize, weird, sref, version, selectedItems, remove);
+};
+
+const handleAspectRatioChange = (event) => {
+  const newAspectRatio = event.target.value;
+  setAspectRatio(newAspectRatio);
+  updatePromptDebounced(customText, weight, imageURL, newAspectRatio, stylize, weird, sref, version, selectedItems, remove);
+};
+
+const handleStylizeChange = (event) => {
+  const newStylize = event.target.value;
+  setStylize(newStylize);
+  updatePromptDebounced(customText, weight, imageURL, aspectRatio, newStylize, weird, sref, version, selectedItems, remove);
+};
+
+const handleWeirdChange = (event) => {
+  const newWeird = event.target.value;
+  setWeird(newWeird);
+  updatePromptDebounced(customText, weight, imageURL, aspectRatio, stylize, newWeird, sref, version, selectedItems, remove);
+};
+
+const handleSrefChange = (event) => {
+  const newSref = event.target.value;
+  setSref(newSref);
+  updatePromptDebounced(customText, weight, imageURL, aspectRatio, stylize, weird, newSref, version, selectedItems, remove);
+};
+
+const handleVersionChange = (event) => {
+  const newVersion = event.target.value;
+  setVersion(newVersion);
+  updatePromptDebounced(customText, weight, imageURL, aspectRatio, stylize, weird, sref, newVersion, selectedItems, remove);
+};
+
+const handleRemoveChange = (event) => {
+  const newRemove = event.target.value;
+  setRemove(newRemove);
+  updatePromptDebounced(customText, weight, imageURL, aspectRatio, stylize, weird, sref, version, selectedItems, newRemove);
+};
+
+const handlePromptChange = (event) => {
+  const newPrompt = event.target.value;
+  setPrompt(newPrompt);
+};
+
+const handleItemClick = (item) => {
+  const updatedItems = selectedItems.includes(item)
+      ? selectedItems.filter((i) => i !== item)
+      : [...selectedItems, item];
+
+  setSelectedItems(updatedItems);
+
+  updatePromptDebounced(customText, weight, imageURL, aspectRatio, stylize, weird, sref, version, updatedItems, remove);
+};
+
+const copyToClipboard = () => {
+  if (promptRef.current) {
       navigator.clipboard.writeText(promptRef.current.value);
-    }
-  };
+  }
+};
+
   return (
     <Box className="flex-box">
       <SideMenu />
@@ -324,6 +330,28 @@ const PromptBuilder = () => {
           </Select>
         </FormControl>
       </Box>
+       {/* New Remove Field */}
+    <Box sx={{ display: 'flex', gap: 2, alignItems: 'center', mt: 2 }}>
+        <Box className="remove-container" sx={{ flex: 3 }}>
+            <TextField
+                label="Remove Item"
+                value={remove}
+                onChange={handleRemoveChange}
+                placeholder="e.g., water, trees"
+                variant="outlined"
+                fullWidth
+                InputLabelProps={{ style: { color: 'rgba(255, 255, 255, 0.7)' } }}
+                sx={{
+                    input: { color: 'white' },
+                    '& .MuiOutlinedInput-root': {
+                        '& fieldset': { borderColor: 'rgba(255, 255, 255, 0.3)' },
+                        '&:hover fieldset': { borderColor: 'rgba(255, 255, 255, 0.5)' },
+                        '&.Mui-focused fieldset': { borderColor: 'rgba(255, 255, 255, 0.7)' },
+                    },
+                }}
+            />
+        </Box>
+    </Box>
     </Box>
   </AccordionDetails>
 </Accordion>
