@@ -9,6 +9,13 @@
 # Build outputs
 /build
 
+/backend/node_modules
+
+
+# Environment files
+.env
+/backend/.env
+/frontend/.env
 # Miscellaneous
 .DS_Store
 .env.local

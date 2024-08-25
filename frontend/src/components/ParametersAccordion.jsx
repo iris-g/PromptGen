@@ -1,4 +1,3 @@
-// ParametersAccordion.jsx
 import React from 'react';
 import { 
   Accordion, 
@@ -38,6 +37,7 @@ const ParametersAccordion = ({ state, handleFieldChange }) => {
       </AccordionSummary>
       <AccordionDetails className="accordion-details" sx={{ borderRadius: 1 }}>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+          {/* Existing fields */}
           <TextField
             label="Add an Image URL"
             value={state.imageURL}
@@ -114,6 +114,34 @@ const ParametersAccordion = ({ state, handleFieldChange }) => {
             fullWidth
             className="text-field"
           />
+          
+          {/* New Chaos Input */}
+          <TextField
+            label="Chaos"
+            type="number"
+            value={state.chaos}
+            onChange={handleFieldChange('chaos')}
+            placeholder="0-100"
+            variant="outlined"
+            fullWidth
+            className="text-field"
+            inputProps={{ min: 0, max: 100 }}
+          />
+          
+          {/* Style Selection */}
+          <FormControl fullWidth className="text-field">
+            <InputLabel id="style-select-label">Style</InputLabel>
+            <Select
+              labelId="style-select-label"
+              value={state.style}
+              onChange={handleFieldChange('style')}
+              label="Style"
+            >
+              <MenuItem value="">None</MenuItem>
+              <MenuItem value="raw">Raw</MenuItem>
+              <MenuItem value="random">Random</MenuItem>
+            </Select>
+          </FormControl>
         </Box>
       </AccordionDetails>
     </Accordion>

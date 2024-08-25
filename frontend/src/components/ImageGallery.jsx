@@ -1,38 +1,37 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Box, Container, Typography } from '@mui/material';
-import { Image } from 'cloudinary-react';
 import { motion, useAnimation } from 'framer-motion';
 import SideMenu from './Sidemenu.jsx';
-<script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+
+// Import your local images here
+import image1 from '../assets/gallery/1.png';
+import image2 from '../assets/gallery/2.png';
+import image3 from '../assets/gallery/3.png';
+// Import more images as needed
+
 const ImageGallery = () => {
-  const [images, setImages] = useState([]);
   const controls = useAnimation();
   const galleryRef = useRef(null);
 
-  useEffect(() => {
-    // Fetch images from your backend or Cloudinary
-    // This is a placeholder, replace with your actual fetch logic
-    const fetchImages = async () => {
-      const fetchedImages = [
-        { id: 1, publicId: 'sample1', prompt: 'A serene landscape' },
-        { id: 2, publicId: 'sample2', prompt: 'Abstract art in vibrant colors' },
-        // Add more images as needed
-      ];
-      setImages(fetchedImages);
-    };
-
-    fetchImages();
-  }, []);
+  // Mock data using local images
+  const images = [
+    { id: 1, url: image1, prompt: 'A serene landscape' },
+    { id: 2, url: image2, prompt: 'Abstract art in vibrant colors' },
+    { id: 3, url: image3, prompt: 'Futuristic cityscape' },
+    // Add more images as needed
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const galleryTop = galleryRef.current.offsetTop;
-      const galleryHeight = galleryRef.current.offsetHeight;
-      const windowHeight = window.innerHeight;
+      if (galleryRef.current) {
+        const scrollY = window.scrollY;
+        const galleryTop = galleryRef.current.offsetTop;
+        const galleryHeight = galleryRef.current.offsetHeight;
+        const windowHeight = window.innerHeight;
 
-      const scrollProgress = (scrollY - galleryTop + windowHeight) / (galleryHeight + windowHeight);
-      controls.start({ opacity: scrollProgress, scale: 0.8 + scrollProgress * 0.2 });
+        const scrollProgress = (scrollY - galleryTop + windowHeight) / (galleryHeight + windowHeight);
+        controls.start({ opacity: scrollProgress, scale: 0.8 + scrollProgress * 0.2 });
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -55,11 +54,9 @@ const ImageGallery = () => {
               whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
               style={{ position: 'relative', overflow: 'hidden', borderRadius: '10px' }}
             >
-              <Image
-                cloudName="your-cloud-name" // Replace with your Cloudinary cloud name
-                publicId={image.publicId}
-                width="250"
-                crop="fill"
+              <img
+                src={image.url}
+                alt={image.prompt}
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
               <motion.div

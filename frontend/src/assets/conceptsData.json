@@ -1,5 +1,5 @@
 {
-    "mathematicalConcepts": [
+    "mathematical Concepts": [
       {
         "category": "Mathematical Sequences and Ratios",
         "items": [
@@ -359,10 +359,9 @@
       }
       
     ]
-,
-"details": [
+, "Prompt Elements": [
   {
-    "category": "Art Medium",
+    "category": "Visual Style",
     "items": [
       { "name": "Oil Painting" },
       { "name": "Watercolor" },
@@ -370,11 +369,18 @@
       { "name": "Charcoal Drawing" },
       { "name": "Acrylic Painting" },
       { "name": "Ink Wash" },
-      { "name": "Mixed Media" }
+      { "name": "Mixed Media" },
+      { "name": "2D Art" },
+      { "name": "3D Rendering" },
+      { "name": "Isometric View" },
+      { "name": "Perspective Drawing" },
+      { "name": "Stereoscopic 3D" },
+      { "name": "Virtual Reality" },
+      { "name": "Cubism" }
     ]
   },
   {
-    "category": "Camera",
+    "category": "Photography",
     "items": [
       { "name": "Film Photography" },
       { "name": "Digital Photography" },
@@ -386,7 +392,7 @@
     ]
   },
   {
-    "category": "Color",
+    "category": "Color and Lighting",
     "items": [
       { "name": "Monochrome" },
       { "name": "Vibrant Colors" },
@@ -394,35 +400,18 @@
       { "name": "Sepia Tone" },
       { "name": "Color Grading" },
       { "name": "Pastel Colors" },
-      { "name": "High Contrast" }
+      { "name": "High Contrast" },
+      { "name": "Natural Lighting" },
+      { "name": "Studio Lighting" },
+      { "name": "Candlelight" },
+      { "name": "Backlighting" },
+      { "name": "High-Key Lighting" },
+      { "name": "Low-Key Lighting" },
+      { "name": "Chiaroscuro" }
     ]
   },
   {
-    "category": "Dimensionality",
-    "items": [
-      { "name": "2D Art" },
-      { "name": "3D Rendering" },
-      { "name": "Isometric View" },
-      { "name": "Perspective Drawing" },
-      { "name": "Stereoscopic 3D" },
-      { "name": "Virtual Reality" },
-      { "name": "Cubism" }
-    ]
-  },
-  {
-    "category": "Display",
-    "items": [
-      { "name": "Framed Art" },
-      { "name": "Gallery Exhibition" },
-      { "name": "Public Installation" },
-      { "name": "Digital Screen" },
-      { "name": "Holographic Display" },
-      { "name": "Projection Mapping" },
-      { "name": "Outdoor Billboard" }
-    ]
-  },
-  {
-    "category": "Geometry",
+    "category": "Composition",
     "items": [
       { "name": "Geometric Shapes" },
       { "name": "Abstract Forms" },
@@ -434,7 +423,7 @@
     ]
   },
   {
-    "category": "Intangibles",
+    "category": "Mood and Concept",
     "items": [
       { "name": "Emotion" },
       { "name": "Mood" },
@@ -442,31 +431,61 @@
       { "name": "Metaphor" },
       { "name": "Allegory" },
       { "name": "Narrative" },
-      { "name": "Symbolism" }
+      { "name": "Symbolism" },
+      { "name": "atmospheric" },
+      { "name": "dramatic" },
+      { "name": "beautiful" },
+      { "name": "organic" },
+      { "name": "magical" },
+      { "name": "mystical" },
+      { "name": "majestic" },
+      { "name": "elegant" },
+      { "name": "ethereal" },
+      { "name": "eerie" },
+      { "name": "evil" },
+      { "name": "victorian" },
+      { "name": "floral" },
+      { "name": "epic" },
+      { "name": "ruined" },
+      { "name": "dirty" },
+      { "name": "grunge" },
+      { "name": "mystery" }
     ]
   },
   {
-    "category": "Lighting",
+    "category": "Detail and Quality",
     "items": [
-      { "name": "Natural Lighting" },
-      { "name": "Studio Lighting" },
-      { "name": "Candlelight" },
-      { "name": "Backlighting" },
-      { "name": "High-Key Lighting" },
-      { "name": "Low-Key Lighting" },
-      { "name": "Chiaroscuro" }
+      { "name": "very detailed" },
+      { "name": "highly detailed" },
+      { "name": "insanely detailed" },
+      { "name": "hyper detailed" },
+      { "name": "ultra detailed" },
+      { "name": "micro details" },
+      { "name": "ornate" },
+      { "name": "intricate" },
+      { "name": "opulent" },
+      { "name": "4k" },
+      { "name": "8k" },
+      { "name": "16k" },
+      { "name": "32k" },
+      { "name": "full HD" },
+      { "name": "ultra HD" },
+      { "name": "UHD" },
+      { "name": "--hd" }
     ]
   },
   {
-    "category": "Material",
+    "category": "Realism and Rendering",
     "items": [
-      { "name": "Canvas" },
-      { "name": "Wood Panel" },
-      { "name": "Metallic Surface" },
-      { "name": "Glass" },
-      { "name": "Paper" },
-      { "name": "Textile" },
-      { "name": "Stone" }
+      { "name": "ultra realistic" },
+      { "name": "hyper realistic" },
+      { "name": "super realistic" },
+      { "name": "photorealistic" },
+      { "name": "unbiased render" },
+      { "name": "blender render" },
+      { "name": "unreal render" },
+      { "name": "octane render" },
+      { "name": "ray tracing" }
     ]
   },
   {
@@ -482,7 +501,7 @@
     ]
   },
   {
-    "category": "Advanced",
+    "category": "Advanced Techniques",
     "items": [
       { "name": "AI-Generated Art" },
       { "name": "Deep Dream" },
@@ -494,7 +513,7 @@
     ]
   },
   {
-    "category": "Mimic the style of an artist",
+    "category": "Artist Styles",
     "items": [
       { "name": "Rembrandt van Rijn" },
       { "name": "Georgia O'Keeffe" },
@@ -523,8 +542,8 @@
       { "name": "Mary Cassatt" }
     ]
   }
-]
-,"artMovements":[
+],
+"artMovements":[
   {
     "category": "Renaissance",
     "items": [
@@ -812,6 +831,7 @@
     ]
   }
 ]
+
     
   }
   

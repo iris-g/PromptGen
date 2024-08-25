@@ -33,7 +33,7 @@ const SideMenu = () => {
         />
       </Box>
       <List>
-        {['Home', 'Gallery', 'About', 'Contact'].map((text, index) => (
+        {['Home', 'ImageGallery', 'About', 'Contact'].map((text, index) => (
           <ListItem 
             button 
             component={Link} 

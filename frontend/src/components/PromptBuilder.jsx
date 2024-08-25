@@ -1,12 +1,14 @@
 import React, { useReducer, useRef, useCallback, useEffect } from 'react';
-import { Box, TextField, Container, IconButton, Tooltip, FormControl, InputLabel, Select, MenuItem, Typography } from '@mui/material';
-import { ContentCopy, Refresh as RefreshIcon } from '@mui/icons-material';
+import { Box, TextField, Container, IconButton, Tooltip, FormControl, InputLabel, Select, MenuItem, Typography, Button } from '@mui/material';
+import { ContentCopy, Refresh as RefreshIcon, AutoFixHigh } from '@mui/icons-material';
 import { debounce } from 'lodash';
 import Header from './Header.jsx';
 import SideMenu from './Sidemenu.jsx';
 import ThemeManager from './sections/ThemeManager.jsx';
 import logo from '../assets/logo.png';
+import CreativeTips from './CreativeTips.jsx';
 import ParametersAccordion from './ParametersAccordion.jsx';
+import { generateRandomSentence } from './RandomSentenceGenerator';
 
 const initialState = {
   prompt: '',
@@ -20,6 +22,8 @@ const initialState = {
   sref: '',
   version: '',
   selectedItems: [],
+  chaos: '',
+  style: '',
 };
 
 const generatePrompt = (state) => {
@@ -33,7 +37,9 @@ const generatePrompt = (state) => {
     sref,
     version,
     selectedItems,
-    remove
+    remove,
+    chaos,
+    style
   } = state;
 
   const weightText = weight !== 1.0 ? `::${weight}` : '';
@@ -44,9 +50,11 @@ const generatePrompt = (state) => {
   const srefText = sref ? ` --sref ${sref}` : '';
   const versionText = version ? ` --version ${version}` : '';
   const itemsText = selectedItems.length > 0 ? ` ${selectedItems.join(', ')}` : '';
+  const chaosText = chaos ? ` --chaos ${chaos}` : '';
+  const styleText = style ? ` --style ${style}` : '';
   
   const updatedText = customText ? `${customText}${weightText}${itemsText}` : `${itemsText}`;
-  return `${imageURL ? `${imageURL} ` : ''}${updatedText}${aspectRatioText}${stylizeText}${weirdText}${srefText}${versionText}${removeText}`.trim();
+  return `${imageURL ? `${imageURL} ` : ''}${updatedText}${aspectRatioText}${stylizeText}${weirdText}${srefText}${versionText}${removeText}${chaosText}${styleText}`.trim();
 };
 
 function reducer(state, action) {
@@ -82,7 +90,7 @@ const PromptBuilder = () => {
 
   useEffect(() => {
     debouncedUpdatePrompt(state);
-  }, [state.customText, state.weight, state.imageURL, state.aspectRatio, state.stylize, state.weird, state.sref, state.version, state.selectedItems, state.remove]);
+  }, [state.customText, state.weight, state.imageURL, state.aspectRatio, state.stylize, state.weird, state.sref, state.version, state.selectedItems, state.remove, state.chaos, state.style]);
 
   const handleFieldChange = (field) => (event) => {
     dispatch({ type: 'UPDATE_FIELD', field, value: event.target.value });
@@ -104,6 +112,11 @@ const PromptBuilder = () => {
     }
   };
 
+  const handleRandomSentence = () => {
+    const randomSentence = generateRandomSentence();
+    dispatch({ type: 'UPDATE_PROMPT', value: randomSentence });
+  };
+
   return (
     <Box className="flex-box">
       <SideMenu />
@@ -111,6 +124,8 @@ const PromptBuilder = () => {
         <Box component="div" className="generated-prompt">
           <Header logo={logo} />
         </Box>
+
+        <CreativeTips />
 
         <Box component="div" className="generated-prompt" sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           <TextField
@@ -124,6 +139,15 @@ const PromptBuilder = () => {
             className="text-field"
             sx={{ flexGrow: 1 }}
           />
+          <Tooltip title="Generate Random Prompt">
+            <IconButton
+              onClick={handleRandomSentence}
+              color="primary"
+              sx={{ '&:hover': { backgroundColor: 'rgba(0, 0, 0, 0.04)' } }}
+            >
+              <AutoFixHigh />
+            </IconButton>
+          </Tooltip>
           <Tooltip title="Copy to clipboard">
             <IconButton
               onClick={copyToClipboard}

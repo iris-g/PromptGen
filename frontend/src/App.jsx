@@ -2,7 +2,7 @@ import React from 'react';
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 import PromptBuilder from './components/PromptBuilder';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Gallery from './components/Gallery.jsx';
+import ImageGallery from './components/ImageGallery.jsx';
 import Contact from './components/Contact.jsx';
 import About from './components/About.jsx';
 // Create a theme instance.
@@ -33,8 +33,8 @@ function App() {
 
        {/* Routes Section */}
        <Routes>
-            <Route path="/" element={<PromptBuilder />} /> {/* Home is now CreatePrompt */}
-            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/" element={<PromptBuilder />} /> 
+            <Route path="/ImageGallery" element={<ImageGallery />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             {/* Add other routes as needed */}
