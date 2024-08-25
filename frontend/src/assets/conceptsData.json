@@ -496,13 +496,31 @@
   {
     "category": "Mimic the style of an artist",
     "items": [
-      { "name": "Van Gogh" },
-      { "name": "Picasso" },
-      { "name": "Monet" },
+      { "name": "Rembrandt van Rijn" },
+      { "name": "Georgia O'Keeffe" },
+      { "name": "Wassily Kandinsky" },
+      { "name": "Yayoi Kusama" },
+      { "name": "Gustav Klimt" },
+      { "name": "Edvard Munch" },
+      { "name": "Hieronymus Bosch" },
+      { "name": "Banksy" },
+      { "name": "Katsushika Hokusai" },
+      { "name": "Artemisia Gentileschi" },
+      { "name": "Jean-Michel Basquiat" },
+      { "name": "Ai Weiwei" },
+      { "name": "Caravaggio" },
       { "name": "Frida Kahlo" },
-      { "name": "Salvador Dalí" },
-      { "name": "Leonardo da Vinci" },
-      { "name": "Andy Warhol" }
+      { "name": "Jackson Pollock" },
+      { "name": "Egon Schiele" },
+      { "name": "Henri Matisse" },
+      { "name": "Beatrix Potter" },
+      { "name": "Keith Haring" },
+      { "name": "Tamara de Lempicka" },
+      { "name": "René Magritte" },
+      { "name": "Michelangelo" },
+      { "name": "Takashi Murakami" },
+      { "name": "Piet Mondrian" },
+      { "name": "Mary Cassatt" }
     ]
   }
 ]
@@ -689,6 +707,108 @@
       { "name": "Artificial Intelligence and Cognition" },
       { "name": "Consciousness and Awareness" },
       { "name": "Neuroplasticity" }
+    ]
+  }
+],
+"naturalElements": [
+  {
+    "category": "Landscape",
+    "items": [
+      { "name": "Misty Mountain Peak" },
+      { "name": "Verdant Valley" },
+      { "name": "Barren Desert Dune" },
+      { "name": "Ancient Forest" },
+      { "name": "Pristine Beach" },
+      { "name": "Frozen Tundra" },
+      { "name": "Rolling Grassland" },
+      { "name": "Deep Canyon" },
+      { "name": "Tropical Island" },
+      { "name": "Rugged Plateau" },
+      { "name": "Majestic Fjord" },
+      { "name": "Vibrant Coral Reef" },
+      { "name": "Active Volcano" },
+      { "name": "Melting Glacier" },
+      { "name": "Crystal Cave" }
+    ]
+  },
+  {
+    "category": "Water Feature",
+    "items": [
+      { "name": "Vast Ocean" },
+      { "name": "Winding River" },
+      { "name": "Serene Lake" },
+      { "name": "Cascading Waterfall" },
+      { "name": "Erupting Geyser" },
+      { "name": "Steaming Hot Spring" },
+      { "name": "Murky Swamp" },
+      { "name": "Tranquil Lagoon" },
+      { "name": "Towering Iceberg" },
+      { "name": "Fertile Delta" },
+      { "name": "Tidal Estuary" },
+      { "name": "Hidden Underground River" },
+      { "name": "Bubbling Thermal Vent" },
+      { "name": "Sheltered Bay" },
+      { "name": "Narrow Fjord" }
+    ]
+  },
+  {
+    "category": "Weather Phenomenon",
+    "items": [
+      { "name": "Raging Thunderstorm" },
+      { "name": "Vivid Rainbow" },
+      { "name": "Shimmering Aurora" },
+      { "name": "Twisting Tornado" },
+      { "name": "Powerful Hurricane" },
+      { "name": "Howling Blizzard" },
+      { "name": "Dense Fog" },
+      { "name": "Pelting Hailstorm" },
+      { "name": "Shimmering Mirage" },
+      { "name": "Swirling Dust Devil" },
+      { "name": "Ethereal St. Elmo's Fire" },
+      { "name": "Mysterious Ball Lightning" },
+      { "name": "Glowing Sun Dog" },
+      { "name": "Ethereal Moonbow" },
+      { "name": "Luminous Halo" }
+    ]
+  },
+  {
+    "category": "Flora",
+    "items": [
+      { "name": "Ancient Oak" },
+      { "name": "Blooming Cherry Blossom" },
+      { "name": "Unfurling Fern" },
+      { "name": "Soft Moss Carpet" },
+      { "name": "Glowing Bioluminescent Fungus" },
+      { "name": "Floating Algae Bloom" },
+      { "name": "Resilient Saguaro Cactus" },
+      { "name": "Twisting Vine" },
+      { "name": "Swaying Prairie Grass" },
+      { "name": "Colorful Lichen" },
+      { "name": "Fragrant Lavender Bush" },
+      { "name": "Undulating Kelp Forest" },
+      { "name": "Towering Bamboo" },
+      { "name": "Twisted Mangrove Root" },
+      { "name": "Cunning Venus Flytrap" }
+    ]
+  },
+  {
+    "category": "Fauna",
+    "items": [
+      { "name": "Majestic Lion" },
+      { "name": "Soaring Eagle" },
+      { "name": "Basking Iguana" },
+      { "name": "Leaping Frog" },
+      { "name": "Darting Koi Fish" },
+      { "name": "Iridescent Butterfly" },
+      { "name": "Orb-Weaving Spider" },
+      { "name": "Spiral-Shelled Nautilus" },
+      { "name": "Scuttling Hermit Crab" },
+      { "name": "Pulsating Jellyfish" },
+      { "name": "Spiny Sea Urchin" },
+      { "name": "Intelligent Octopus" },
+      { "name": "Bounding Kangaroo" },
+      { "name": "Wise Orangutan" },
+      { "name": "Breaching Humpback Whale" }
     ]
   }
 ]

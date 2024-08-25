@@ -31,6 +31,10 @@ const ThemeManager = ({ selectedItems, handleItemClick }) => {
       {
         name:"psychology And Human Experience",
         categories:categoriesData.psychologyAndHumanExperience
+      },
+      {
+        name:"Natural Elemnts",
+        categories:categoriesData.naturalElements
       }
     ]);
   }, []);
