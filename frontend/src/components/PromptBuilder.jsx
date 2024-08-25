@@ -118,9 +118,18 @@ const PromptBuilder = () => {
   };
 
   return (
-    <Box className="flex-box">
-      <SideMenu />
-      <Container maxWidth="md" className="container-md" sx={{ ml: 2 }}>
+    <Box sx={{ display: 'flex', height: '100vh' }}>
+
+      <Container 
+        maxWidth="md" 
+        sx={{ 
+          flexGrow: 1, 
+          ml: 0, // Ensure no left margin 
+          pl: 0, // Ensure no left padding
+          display: 'flex', 
+          flexDirection: 'column' 
+        }}
+      >
         <Box component="div" className="generated-prompt">
           <Header logo={logo} />
         </Box>

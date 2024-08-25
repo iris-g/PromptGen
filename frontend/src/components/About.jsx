@@ -9,8 +9,8 @@ const AboutSection = () => {
   const features = ['Unique Themes', 'Mathematical Concepts', 'Physical Realms', 'AR Stylize', 'Chaos Factor'];
 
   return (
-    <Box className="flex-box" sx={{ bgcolor: '#121212', color: 'common.white', minHeight: '100vh', p: 3 }}>
-      <SideMenu />
+    <Box className="flex-box" sx={{  color: 'common.white', minHeight: '100vh', p: 3 }}>
+    
       <Grid container spacing={4} alignItems="center">
         {/* Left Side - Text Content */}
         <Grid item xs={12} md={6}>

@@ -543,7 +543,7 @@
     ]
   }
 ],
-"artMovements":[
+"Art Movements":[
   {
     "category": "Renaissance",
     "items": [
@@ -646,7 +646,7 @@
   }
 
 ]
-,"scienceAndTechnology": [
+,"Science And Technology": [
   {
     "category": "Space Exploration",
     "items": [
@@ -688,7 +688,7 @@
     ]
   }
 ],
-"psychologyAndHumanExperience": [
+"Psychology And Human Experience": [
   {
     "category": "Dreamscapes",
     "items": [
@@ -729,7 +729,7 @@
     ]
   }
 ],
-"naturalElements": [
+"Natural Elements": [
   {
     "category": "Landscape",
     "items": [

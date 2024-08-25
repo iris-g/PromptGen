@@ -14,7 +14,7 @@ const SideMenu = () => {
         [`& .MuiDrawer-paper`]: {
           width: { xs: 200, sm: 240 },
           boxSizing: 'border-box',
-          backgroundColor: '#04021b', // Sidebar background color
+          backgroundColor: '#04021b',
           color: (theme) => theme.palette.primary.contrastText,
           paddingTop: 2,
           paddingBottom: 2,
@@ -33,11 +33,16 @@ const SideMenu = () => {
         />
       </Box>
       <List>
-        {['Home', 'ImageGallery', 'About', 'Contact'].map((text, index) => (
+        {[
+          { text: 'Home', path: '/' },
+          { text: 'Image Gallery', path: '/imagegallery' },
+          { text: 'About', path: '/about' },
+          { text: 'Contact', path: '/contact' }
+        ].map(({ text, path }) => (
           <ListItem 
             button 
             component={Link} 
-            to={`/${text.toLowerCase()}`} 
+            to={path} 
             key={text}
             sx={{
               backgroundColor: (theme) => theme.palette.primary.main,
@@ -46,12 +51,12 @@ const SideMenu = () => {
               padding: { xs: '8px 16px', sm: '10px 20px' },
               borderRadius: '4px',
               fontSize: { xs: '0.875rem', sm: '1rem' },
-              transition: 'transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease', // Smooth transition effects
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease',
               '&:hover': {
                 backgroundColor: (theme) => theme.palette.primary.light,
                 color: '#fff',
-                transform: 'scale(1.05)', // Slight scale-up effect
-                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)', // Shadow effect for depth
+                transform: 'scale(1.05)',
+                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',
               },
               '&.Mui-selected': {
                 backgroundColor: (theme) => theme.palette.primary.dark,
