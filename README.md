@@ -24,7 +24,7 @@ When I couldn't find a tool that did all this, I thought, "Why not build it myse
 - **Works Everywhere**: Use it on your computer, tablet, or phone - it looks great on all screens
 - **Fine-Tune Your Creation**: Tweak every aspect of your prompt with easy-to-use controls
 
-![Project Screenshot](/promptGenerator/frontend/src/assets/Image 25-08-2024 at 19.50.jpeg)
+![Project Screenshot](/promptGenerator/frontend/src/assets/imageParams.jpeg)
 
 ## 🛠️ The Tech Behind the Magic
 
