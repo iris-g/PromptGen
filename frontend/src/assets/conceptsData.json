@@ -1,837 +1,1090 @@
 {
-    "mathematical Concepts": [
-      {
-        "category": "Mathematical Sequences and Ratios",
-        "items": [
-          { "name": "Arithmetic Sequence" },
-          { "name": "Geometric Sequence" },
-          { "name": "Harmonic Sequence" },
-          { "name": "Lucas Sequence" },
-          { "name": "Triangular Numbers" },
-          { "name": "Square Numbers" },
-          { "name": "Pentagonal Numbers" },
-          { "name": "Golden Ratio Sequence" },
-          { "name": "Catalan Numbers" },
-          { "name": "Pell Numbers" },
-          { "name": "Sylvester's Sequence" },
-          { "name": "Factorial Sequence" },
-          { "name": "Fibonacci-Lucas Sequence" },
-          { "name": "Eulerian Numbers" },
-          { "name": "Padovan Sequence" }
-        ]
-      },
-      {
-        "category": "Fractals and Recursive Patterns",
-        "items": [
-          { "name": "Mandelbrot Set" },
-          { "name": "Koch Snowflake" },
-          { "name": "Sierpinski Triangle" },
-          { "name": "Lindenmayer Systems (L-Systems)" },
-          { "name": "Julia Sets" },
-          { "name": "Cantor Set" },
-          { "name": "Barnsley Fern" },
-          { "name": "Dragon Curve" },
-          { "name": "Hilbert Curve" },
-          { "name": "Apollonian Gasket" },
-          { "name": "Fractals in Nature" },
-          { "name": "Fractal Flames" },
-          { "name": "Quaternion Fractals" },
-          { "name": "Cantor Dust" }
-        ]
-      },
-      {
-        "category": "Geometric Transformations and Surfaces",
-        "items": [
-          { "name": "Klein Bottle" },
-          { "name": "Mobius Strip" },
-          { "name": "Circle Inversion" },
-          { "name": "Platonic Solids" },
-          { "name": "Celtic Knots" },
-          { "name": "Penrose Tiling" },
-          { "name": "Bezier Curves" },
-          { "name": "Spirograph Patterns" },
-          { "name": "Tessellations" },
-          { "name": "Lissajous Curves" },
-          { "name": "Turing Machines" }
-        ]
-      },
-      {
-        "category": "Algorithmic Patterns and Systems",
-        "items": [
-          { "name": "Recursion" },
-          { "name": "Voronoi Diagrams" },
-          { "name": "Turing Patterns" },
-          { "name": "Bifurcation Diagram" },
-          { "name": "Symmetry Groups" },
-          { "name": "Platonic Knots" }
-        ]
-      },
-      {
-        "category": "Advanced Geometric Structures",
-        "items": [
-          { "name": "Hyperbolic Geometry" },
-          { "name": "Non-Euclidean Geometry" },
-          { "name": "Poincaré Disk" },
-          { "name": "Hyperbolic Paraboloids" },
-          { "name": "Polytopes" },
-          { "name": "Affine Transformations" },
-          { "name": "Chaotic Attractors" },
-          { "name": "Wolfram's Rule 30" },
-          { "name": "Cellular Automata" },
-          { "name": "Hypercomplex Fractals" },
-          { "name": "Algebraic Curves" },
-          { "name": "Self-Avoiding Walks" },
-          { "name": "Hexaflexagons" },
-          { "name": "Polyhedral Dice" },
-          { "name": "Magic Squares" },
-          { "name": "Logarithmic Spirals" },
-          { "name": "Fermat's Spiral" },
-          { "name": "Braids and Knots" },
-          { "name": "Euler's Formula" },
-          { "name": "Golden Spiral" },
-          { "name": "Catenary Curves" },
-          { "name": "Rose Curves" },
-          { "name": "Toroidal Shapes" },
-          { "name": "Star Polygons" },
-          { "name": "Hilbert Space" },
-          { "name": "Hyperbolic Paraboloids" },
-          { "name": "De Bruijn Sequences" },
-          { "name": "Fibonacci Circles" },
-          { "name": "Kaleidoscope Patterns" },
-          { "name": "Circle Packing" },
-          { "name": "Non-Euclidean Geometry" },
-          { "name": "Thue-Morse Sequence" },
-          { "name": "Geodesic Domes" },
-          { "name": "Isohedral Tilings" },
-          { "name": "Spheroids" },
-          { "name": "Lissajous Knots" },
-          { "name": "Cycloids" },
-          { "name": "Möbius Transformations" },
-          { "name": "Complex Plane Fractals" },
-          { "name": "Fractal Mountains" },
-          { "name": "Platonic Fractals" },
-          { "name": "Irrational Tilings" },
-          { "name": "Symmetric Trees" },
-          { "name": "Hypercubes" },
-          { "name": "Tessellation Art" },
-          { "name": "Anamorphic Art" },
-          { "name": "Orbits of the Moon" },
-          { "name": "Equilateral Tilings" },
-          { "name": "Quaternion Rotations" },
-          { "name": "Heesch Tilings" },
-          { "name": "Schottky Group Fractals" },
-          { "name": "Voronoi Noise" },
-          { "name": "Flame Algorithms" },
-          { "name": "Reuleaux Triangles" },
-          { "name": "Coxeter Fractals" },
-          { "name": "Cubic Lattices" },
-          { "name": "Lattice Structures" },
-          { "name": "Icospheres" },
-          { "name": "Sudoku Grids" },
-          { "name": "Magic Hexagons" },
-          { "name": "Unicursal Patterns" },
-          { "name": "Necker Cubes" },
-          { "name": "Tesseracts" },
-          { "name": "Crystal Lattices" },
-          { "name": "Riemann Surfaces" },
-          { "name": "Weierstrass Function" },
-          { "name": "Strange Attractors" },
-          { "name": "Lemniscates" },
-          { "name": "Conway's Game of Life" },
-          { "name": "Binary Trees" },
-          { "name": "Lichtenberg Figures" },
-          { "name": "Bezier Surface" },
-          { "name": "Vector Fields" },
-          { "name": "Circular Harmonics" },
-          { "name": "Periodic Tilings" },
-          { "name": "Hypotrochoids" },
-          { "name": "Epicycloids" },
-          { "name": "Astroids" },
-          { "name": "Euler Spirals" },
-          { "name": "Elliptical Orbits" },
-          { "name": "Magic Stars" },
-          { "name": "Aperiodic Crystals" },
-          { "name": "Pappus Chains" },
-          { "name": "Elliptical Integrals" },
-          { "name": "Platonic Knots" },
-          { "name": "Magic Tesseracts" },
-          { "name": "Space-Filling Curves" },
-          { "name": "Grassmann Algebra" },
-          { "name": "Quaternion Julia Sets" },
-          { "name": "Platonic Lattices" },
-          { "name": "Neural Networks" },
-          { "name": "Hexagonal Packing" },
-          { "name": "Symmetry Breaking" },
-          { "name": "Dual Polyhedra" },
-          { "name": "Isogonal Figures" },
-          { "name": "Non-Convex Shapes" },
-          { "name": "Zome Models" },
-          { "name": "Hexagonal Grids" },
-          { "name": "Vector Equilibria" },
-          { "name": "Octahedral Tilings" },
-          { "name": "Klein Surfaces" },
-          { "name": "Mathematical Weaving" },
-          { "name": "Hyperbolic Tessellations" },
-          { "name": "Orthogonal Grids" },
-          { "name": "Snub Polyhedra" },
-          { "name": "Platonic Surfaces" },
-          { "name": "Hamiltonian Circuits" },
-          { "name": "Spherical Tilings" },
-          { "name": "Meander Patterns" },
-          { "name": "Necker Tessellations" },
-          { "name": "Gosper Curves" },
-          { "name": "Magic Cubes" },
-          { "name": "Cubic Transformations" },
-          { "name": "Mobius Lattice" },
-          { "name": "Affine Geometry" }
-        ]
-      },
-      {
-        "category": "Symmetry and Asymmetry",
-        "items": [
-          { "name": "Symmetry Groups" },
-          { "name": "Reflection Symmetry" },
-          { "name": "Rotational Symmetry" },
-          { "name": "Bilateral Symmetry" },
-          { "name": "Asymmetrical Designs" },
-          { "name": "Symmetry Breaking" }
-        ]
-      },
-      {
-        "category": "Topological Phenomena",
-        "items": [
-          { "name": "Möbius Strip" },
-          { "name": "Klein Bottle" },
-          { "name": "Tesseracts (4D Cubes)" },
-          { "name": "Euler Characteristic" },
-          { "name": "Homotopy and Homology" },
-          { "name": "Topological Insulators" }
-        ]
-      },
-      {
-        "category": "Chaos and Order",
-        "items": [
-          { "name": "Lorenz Attractor" },
-          { "name": "Strange Attractors" },
-          { "name": "Chaos Theory" },
-          { "name": "Bifurcation Diagrams" },
-          { "name": "Fractal Boundaries" },
-          { "name": "Entropy and Negentropy" }
-        ]
-      },
-      {
-        "category": "Quantum Mechanics and Uncertainty",
-        "items": [
-          { "name": "Schrödinger's Cat" },
-          { "name": "Heisenberg Uncertainty Principle" },
-          { "name": "Quantum Superposition" },
-          { "name": "Wave-Particle Duality" },
-          { "name": "Quantum Entanglement" },
-          { "name": "Feynman Diagrams" }
-        ]
-      },
-      {
-        "category": "Dimensionality and Multiverses",
-        "items": [
-          { "name": "Higher Dimensions (4D, 5D, etc.)" },
-          { "name": "Multiverse Theory" },
-          { "name": "Calabi-Yau Manifolds" },
-          { "name": "String Theory" },
-          { "name": "Hyperspheres" },
-          { "name": "Dimensional Reduction" }
-        ]
-      },
-      {
-        "category": "Patterns in Nature",
-        "items": [
-          { "name": "Fibonacci Spirals in Sunflowers" },
-          { "name": "Fractals in Coastlines and Rivers" },
-          { "name": "Crystal Lattice Structures" },
-          { "name": "Leaf Venation Patterns" },
-          { "name": "Spirals in Galaxies" },
-          { "name": "Patterns in Animal Coats (Stripes, Spots)" }
-        ]
-      },
-      {
-        "category": "Mathematical Paradoxes",
-        "items": [
-          { "name": "Zeno's Paradoxes" },
-          { "name": "The Banach-Tarski Paradox" },
-          { "name": "The Liar Paradox" },
-          { "name": "Russell's Paradox" },
-          { "name": "Hilbert's Hotel" },
-          { "name": "The Barber Paradox" }
-        ]
-      },
-      {
-        "category": "Computational Art and Algorithmic Aesthetics",
-        "items": [
-          { "name": "Generative Art" },
-          { "name": "Algorithmic Music Composition" },
-          { "name": "Cellular Automata in Art" },
-          { "name": "Procedural Generation" },
-          { "name": "Random Walks and Brownian Motion" },
-          { "name": "Evolutionary Algorithms in Design" }
-        ]
-      },
-      {
-        "category": "Astronomical Geometry",
-        "items": [
-          { "name": "Elliptical Orbits" },
-          { "name": "Kepler's Laws" },
-          { "name": "Spherical Harmonics" },
-          { "name": "Celestial Mechanics" },
-          { "name": "Tidal Forces and Roche Limits" },
-          { "name": "Great Circles and Orbital Planes" }
-        ]
-      },
-
-      {
-        "category": "Metamathematics and Gödel's Incompleteness",
-        "items": [
-          { "name": "Gödel's Incompleteness Theorems" },
-          { "name": "Turing Machines and the Halting Problem" },
-          { "name": "The Entscheidungsproblem" },
-          { "name": "The Curry-Howard Correspondence" },
-          { "name": "Category Theory and Foundations of Mathematics" },
-          { "name": "The Axiom of Choice" }
-        ]
-      },    
-      {
-        "category": "Optical Illusions and Visual Phenomena",
-        "items": [
-          { "name": "Impossible Objects (Penrose Triangle, Escher's Stairs)" },
-          { "name": "Necker Cube" },
-          { "name": "Ambiguous Figures (Rubin's Vase, Duck-Rabbit Illusion)" },
-          { "name": "Müller-Lyer Illusion" },
-          { "name": "Hering Illusion" },
-          { "name": "Checker Shadow Illusion" },
-          { "name": "Poggendorff Illusion" },
-          { "name": "Ebbinghaus Illusion (Titchener Circles)" },
-          { "name": "Motion Illusions (Rotating Snakes, Spinning Dancer)" },
-          { "name": "Café Wall Illusion" },
-          { "name": "Color Constancy and the Dress" }
-        ]
-      },
-      {
-        "category": "Biological Computation and Neural Networks",
-        "items": [
-          { "name": "Neural Network Architectures" },
-          { "name": "Artificial Life (ALife)" },
-          { "name": "Genetic Algorithms" },
-          { "name": "Hopfield Networks" },
-          { "name": "Neuronal Dynamics and Brain Waves" },
-          { "name": "Computational Neuroscience" }
-        ]
-      },
-      {
-        "category": "Sacred Geometry",
-        "items": [
-          { "name": "The Flower of Life" },
-          { "name": "Metatron's Cube" },
-          { "name": "The Tree of Life (Kabbalah)" },
-          { "name": "The Sri Yantra" },
-          { "name": "Vesica Piscis" },
-          { "name": "The Geometry of Mandalas" }
-        ]
-      },
-      {
-        "category": "Cognitive Science and Perception",
-        "items": [
-          { "name": "Perceptual Illusions" },
-          { "name": "Gestalt Principles" },
-          { "name": "Bayesian Models of Perception" },
-          { "name": "Information Processing in the Brain" },
-          { "name": "Theories of Consciousness (Integrated Information Theory, Global Workspace Theory)" },
-          { "name": "The Mathematics of Attention and Memory" }
-        ]
-      },
-      {
-        "category": "Temporal Mechanics and Time Travel",
-        "items": [
-          { "name": "Closed Timelike Curves" },
-          { "name": "Time Dilation and Relativity" },
-          { "name": "Paradoxes of Time Travel (Grandfather Paradox, Bootstrap Paradox)" },
-          { "name": "Causal Loops" },
-          { "name": "The Arrow of Time and Entropy" },
-          { "name": "Chronotopes in Literature and Art" }
-        ]
-      }
+  "Mathematical Concepts": [
+    {
+      "category": "Mathematical Sequences and Ratios",
+      "items": [
+        { "name": "Arithmetic Sequence" },
+        { "name": "Geometric Sequence" },
+        { "name": "Harmonic Sequence" },
+        { "name": "Lucas Sequence" },
+        { "name": "Triangular Numbers" },
+        { "name": "Square Numbers" },
+        { "name": "Pentagonal Numbers" },
+        { "name": "Golden Ratio Sequence" },
+        { "name": "Catalan Numbers" },
+        { "name": "Pell Numbers" },
+        { "name": "Sylvester's Sequence" },
+        { "name": "Factorial Sequence" },
+        { "name": "Fibonacci-Lucas Sequence" },
+        { "name": "Eulerian Numbers" },
+        { "name": "Padovan Sequence" }
+      ]
+    },
+    {
+      "category": "Fractals and Recursive Patterns",
+      "items": [
+        { "name": "Mandelbrot Set" },
+        { "name": "Koch Snowflake" },
+        { "name": "Sierpinski Triangle" },
+        { "name": "Lindenmayer Systems (L-Systems)" },
+        { "name": "Julia Sets" },
+        { "name": "Cantor Set" },
+        { "name": "Barnsley Fern" },
+        { "name": "Dragon Curve" },
+        { "name": "Hilbert Curve" },
+        { "name": "Apollonian Gasket" },
+        { "name": "Fractals in Nature" },
+        { "name": "Fractal Flames" },
+        { "name": "Quaternion Fractals" },
+        { "name": "Cantor Dust" }
+      ]
+    },
+    {
+      "category": "Geometric Transformations and Surfaces",
+      "items": [
+        { "name": "Klein Bottle" },
+        { "name": "Mobius Strip" },
+        { "name": "Circle Inversion" },
+        { "name": "Platonic Solids" },
+        { "name": "Celtic Knots" },
+        { "name": "Penrose Tiling" },
+        { "name": "Bezier Curves" },
+        { "name": "Spirograph Patterns" },
+        { "name": "Tessellations" },
+        { "name": "Lissajous Curves" },
+        { "name": "Turing Machines" }
+      ]
+    },
+    {
+      "category": "Algorithmic Patterns and Systems",
+      "items": [
+        { "name": "Recursion" },
+        { "name": "Voronoi Diagrams" },
+        { "name": "Turing Patterns" },
+        { "name": "Bifurcation Diagram" },
+        { "name": "Symmetry Groups" },
+        { "name": "Platonic Knots" }
+      ]
+    },
+    {
+      "category": "Advanced Geometric Structures",
+      "items": [
+        { "name": "Hyperbolic Geometry" },
+        { "name": "Non-Euclidean Geometry" },
+        { "name": "Poincaré Disk" },
+        { "name": "Hyperbolic Paraboloids" },
+        { "name": "Polytopes" },
+        { "name": "Affine Transformations" },
+        { "name": "Chaotic Attractors" },
+        { "name": "Wolfram's Rule 30" },
+        { "name": "Cellular Automata" },
+        { "name": "Hypercomplex Fractals" },
+        { "name": "Algebraic Curves" },
+        { "name": "Self-Avoiding Walks" },
+        { "name": "Hexaflexagons" },
+        { "name": "Polyhedral Dice" },
+        { "name": "Magic Squares" },
+        { "name": "Logarithmic Spirals" },
+        { "name": "Fermat's Spiral" },
+        { "name": "Braids and Knots" },
+        { "name": "Euler's Formula" },
+        { "name": "Golden Spiral" },
+        { "name": "Catenary Curves" },
+        { "name": "Rose Curves" },
+        { "name": "Toroidal Shapes" },
+        { "name": "Star Polygons" },
+        { "name": "Hilbert Space" },
+        { "name": "De Bruijn Sequences" },
+        { "name": "Fibonacci Circles" },
+        { "name": "Kaleidoscope Patterns" },
+        { "name": "Circle Packing" },
+        { "name": "Thue-Morse Sequence" },
+        { "name": "Geodesic Domes" },
+        { "name": "Isohedral Tilings" },
+        { "name": "Spheroids" },
+        { "name": "Lissajous Knots" },
+        { "name": "Cycloids" },
+        { "name": "Möbius Transformations" },
+        { "name": "Complex Plane Fractals" },
+        { "name": "Fractal Mountains" },
+        { "name": "Platonic Fractals" },
+        { "name": "Irrational Tilings" },
+        { "name": "Symmetric Trees" },
+        { "name": "Hypercubes" },
+        { "name": "Tessellation Art" },
+        { "name": "Anamorphic Art" },
+        { "name": "Orbits of the Moon" },
+        { "name": "Equilateral Tilings" },
+        { "name": "Quaternion Rotations" },
+        { "name": "Heesch Tilings" },
+        { "name": "Schottky Group Fractals" },
+        { "name": "Voronoi Noise" },
+        { "name": "Flame Algorithms" },
+        { "name": "Reuleaux Triangles" },
+        { "name": "Coxeter Fractals" },
+        { "name": "Cubic Lattices" },
+        { "name": "Lattice Structures" },
+        { "name": "Icospheres" },
+        { "name": "Sudoku Grids" },
+        { "name": "Magic Hexagons" },
+        { "name": "Unicursal Patterns" },
+        { "name": "Necker Cubes" },
+        { "name": "Tesseracts" },
+        { "name": "Crystal Lattices" },
+        { "name": "Riemann Surfaces" },
+        { "name": "Weierstrass Function" },
+        { "name": "Strange Attractors" },
+        { "name": "Lemniscates" },
+        { "name": "Conway's Game of Life" },
+        { "name": "Binary Trees" },
+        { "name": "Lichtenberg Figures" },
+        { "name": "Bezier Surface" },
+        { "name": "Vector Fields" },
+        { "name": "Circular Harmonics" },
+        { "name": "Periodic Tilings" },
+        { "name": "Hypotrochoids" },
+        { "name": "Epicycloids" },
+        { "name": "Astroids" },
+        { "name": "Euler Spirals" },
+        { "name": "Elliptical Orbits" },
+        { "name": "Magic Stars" },
+        { "name": "Aperiodic Crystals" },
+        { "name": "Pappus Chains" },
+        { "name": "Elliptical Integrals" },
+        { "name": "Magic Tesseracts" },
+        { "name": "Space-Filling Curves" },
+        { "name": "Grassmann Algebra" },
+        { "name": "Quaternion Julia Sets" },
+        { "name": "Platonic Lattices" },
+        { "name": "Neural Networks" },
+        { "name": "Hexagonal Packing" },
+        { "name": "Symmetry Breaking" },
+        { "name": "Dual Polyhedra" },
+        { "name": "Isogonal Figures" },
+        { "name": "Non-Convex Shapes" },
+        { "name": "Zome Models" },
+        { "name": "Hexagonal Grids" },
+        { "name": "Vector Equilibria" },
+        { "name": "Octahedral Tilings" },
+        { "name": "Klein Surfaces" },
+        { "name": "Mathematical Weaving" },
+        { "name": "Hyperbolic Tessellations" },
+        { "name": "Orthogonal Grids" },
+        { "name": "Snub Polyhedra" },
+        { "name": "Platonic Surfaces" },
+        { "name": "Hamiltonian Circuits" },
+        { "name": "Spherical Tilings" },
+        { "name": "Meander Patterns" },
+        { "name": "Necker Tessellations" },
+        { "name": "Gosper Curves" },
+        { "name": "Magic Cubes" },
+        { "name": "Cubic Transformations" },
+        { "name": "Mobius Lattice" },
+        { "name": "Affine Geometry" }
+      ]
+    },
+    {
+      "category": "Symmetry and Asymmetry",
+      "items": [
+        { "name": "Symmetry Groups" },
+        { "name": "Reflection Symmetry" },
+        { "name": "Rotational Symmetry" },
+        { "name": "Bilateral Symmetry" },
+        { "name": "Asymmetrical Designs" },
+        { "name": "Symmetry Breaking" }
+      ]
+    },
+    {
+      "category": "Topological Phenomena",
+      "items": [
+        { "name": "Möbius Strip" },
+        { "name": "Klein Bottle" },
+        { "name": "Tesseracts (4D Cubes)" },
+        { "name": "Euler Characteristic" },
+        { "name": "Homotopy and Homology" },
+        { "name": "Topological Insulators" }
+      ]
+    },
+    {
+      "category": "Chaos and Order",
+      "items": [
+        { "name": "Lorenz Attractor" },
+        { "name": "Strange Attractors" },
+        { "name": "Chaos Theory" },
+        { "name": "Bifurcation Diagrams" },
+        { "name": "Fractal Boundaries" },
+        { "name": "Entropy and Negentropy" }
+      ]
+    },
+    {
+      "category": "Quantum Mechanics and Uncertainty",
+      "items": [
+        { "name": "Schrödinger's Cat" },
+        { "name": "Heisenberg Uncertainty Principle" },
+        { "name": "Quantum Superposition" },
+        { "name": "Wave-Particle Duality" },
+        { "name": "Quantum Entanglement" },
+        { "name": "Feynman Diagrams" }
+      ]
+    },
+    {
+      "category": "Dimensionality and Multiverses",
+      "items": [
+        { "name": "Higher Dimensions (4D, 5D, etc.)" },
+        { "name": "Multiverse Theory" },
+        { "name": "Calabi-Yau Manifolds" },
+        { "name": "String Theory" },
+        { "name": "Hyperspheres" },
+        { "name": "Dimensional Reduction" }
+      ]
+    },
+    {
+      "category": "Patterns in Nature",
+      "items": [
+        { "name": "Fibonacci Spirals in Sunflowers" },
+        { "name": "Fractals in Coastlines and Rivers" },
+        { "name": "Crystal Lattice Structures" },
+        { "name": "Leaf Venation Patterns" },
+        { "name": "Spirals in Galaxies" },
+        { "name": "Patterns in Animal Coats (Stripes, Spots)" }
+      ]
+    },
+    {
+      "category": "Mathematical Paradoxes",
+      "items": [
+        { "name": "Zeno's Paradoxes" },
+        { "name": "The Banach-Tarski Paradox" },
+        { "name": "The Liar Paradox" },
+        { "name": "Russell's Paradox" },
+        { "name": "Hilbert's Hotel" },
+        { "name": "The Barber Paradox" }
+      ]
+    },
+    {
+      "category": "Computational Art and Algorithmic Aesthetics",
+      "items": [
+        { "name": "Generative Art" },
+        { "name": "Algorithmic Music Composition" },
+        { "name": "Cellular Automata in Art" },
+        { "name": "Procedural Generation" },
+        { "name": "Random Walks and Brownian Motion" },
+        { "name": "Evolutionary Algorithms in Design" }
+      ]
+    },
+    {
+      "category": "Astronomical Geometry",
+      "items": [
+        { "name": "Elliptical Orbits" },
+        { "name": "Kepler's Laws" },
+        { "name": "Spherical Harmonics" },
+        { "name": "Celestial Mechanics" },
+        { "name": "Tidal Forces and Roche Limits" },
+        { "name": "Great Circles and Orbital Planes" }
+      ]
+    },
+    {
+      "category": "Metamathematics and Gödel's Incompleteness",
+      "items": [
+        { "name": "Gödel's Incompleteness Theorems" },
+        { "name": "Turing Machines and the Halting Problem" },
+        { "name": "The Entscheidungsproblem" },
+        { "name": "The Curry-Howard Correspondence" },
+        { "name": "Category Theory and Foundations of Mathematics" },
+        { "name": "The Axiom of Choice" }
+      ]
+    },
+    {
+      "category": "Optical Illusions and Visual Phenomena",
+      "items": [
+        { "name": "Impossible Objects (Penrose Triangle, Escher's Stairs)" },
+        { "name": "Necker Cube" },
+        { "name": "Ambiguous Figures (Rubin's Vase, Duck-Rabbit Illusion)" },
+        { "name": "Müller-Lyer Illusion" },
+        { "name": "Hering Illusion" },
+        { "name": "Checker Shadow Illusion" },
+        { "name": "Poggendorff Illusion" },
+        { "name": "Ebbinghaus Illusion (Titchener Circles)" },
+        { "name": "Motion Illusions (Rotating Snakes, Spinning Dancer)" },
+        { "name": "Café Wall Illusion" },
+        { "name": "Color Constancy and the Dress" }
+      ]
+    },
+    {
+      "category": "Biological Computation and Neural Networks",
+      "items": [
+        { "name": "Neural Network Architectures" },
+        { "name": "Artificial Life (ALife)" },
+        { "name": "Genetic Algorithms" },
+        { "name": "Hopfield Networks" },
       
-    ]
-, "Prompt Elements": [
-  {
-    "category": "Visual Style",
-    "items": [
-      { "name": "Oil Painting" },
-      { "name": "Watercolor" },
-      { "name": "Digital Art" },
-      { "name": "Charcoal Drawing" },
-      { "name": "Acrylic Painting" },
-      { "name": "Ink Wash" },
-      { "name": "Mixed Media" },
-      { "name": "2D Art" },
-      { "name": "3D Rendering" },
-      { "name": "Isometric View" },
-      { "name": "Perspective Drawing" },
-      { "name": "Stereoscopic 3D" },
-      { "name": "Virtual Reality" },
-      { "name": "Cubism" }
-    ]
-  },
-  {
-    "category": "Photography",
-    "items": [
-      { "name": "Film Photography" },
-      { "name": "Digital Photography" },
-      { "name": "DSLR" },
-      { "name": "Mirrorless Camera" },
-      { "name": "Polaroid" },
-      { "name": "Macro Photography" },
-      { "name": "Wide Angle Lens" }
-    ]
-  },
-  {
-    "category": "Color and Lighting",
-    "items": [
-      { "name": "Monochrome" },
-      { "name": "Vibrant Colors" },
-      { "name": "Muted Tones" },
-      { "name": "Sepia Tone" },
-      { "name": "Color Grading" },
-      { "name": "Pastel Colors" },
-      { "name": "High Contrast" },
-      { "name": "Natural Lighting" },
-      { "name": "Studio Lighting" },
-      { "name": "Candlelight" },
-      { "name": "Backlighting" },
-      { "name": "High-Key Lighting" },
-      { "name": "Low-Key Lighting" },
-      { "name": "Chiaroscuro" }
-    ]
-  },
-  {
-    "category": "Composition",
-    "items": [
-      { "name": "Geometric Shapes" },
-      { "name": "Abstract Forms" },
-      { "name": "Symmetry" },
-      { "name": "Fractal Geometry" },
-      { "name": "Minimalism" },
-      { "name": "Sacred Geometry" },
-      { "name": "Tessellation" }
-    ]
-  },
-  {
-    "category": "Mood and Concept",
-    "items": [
-      { "name": "Emotion" },
-      { "name": "Mood" },
-      { "name": "Conceptual Art" },
-      { "name": "Metaphor" },
-      { "name": "Allegory" },
-      { "name": "Narrative" },
-      { "name": "Symbolism" },
-      { "name": "atmospheric" },
-      { "name": "dramatic" },
-      { "name": "beautiful" },
-      { "name": "organic" },
-      { "name": "magical" },
-      { "name": "mystical" },
-      { "name": "majestic" },
-      { "name": "elegant" },
-      { "name": "ethereal" },
-      { "name": "eerie" },
-      { "name": "evil" },
-      { "name": "victorian" },
-      { "name": "floral" },
-      { "name": "epic" },
-      { "name": "ruined" },
-      { "name": "dirty" },
-      { "name": "grunge" },
-      { "name": "mystery" }
-    ]
-  },
-  {
-    "category": "Detail and Quality",
-    "items": [
-      { "name": "very detailed" },
-      { "name": "highly detailed" },
-      { "name": "insanely detailed" },
-      { "name": "hyper detailed" },
-      { "name": "ultra detailed" },
-      { "name": "micro details" },
-      { "name": "ornate" },
-      { "name": "intricate" },
-      { "name": "opulent" },
-      { "name": "4k" },
-      { "name": "8k" },
-      { "name": "16k" },
-      { "name": "32k" },
-      { "name": "full HD" },
-      { "name": "ultra HD" },
-      { "name": "UHD" },
-      { "name": "--hd" }
-    ]
-  },
-  {
-    "category": "Realism and Rendering",
-    "items": [
-      { "name": "ultra realistic" },
-      { "name": "hyper realistic" },
-      { "name": "super realistic" },
-      { "name": "photorealistic" },
-      { "name": "unbiased render" },
-      { "name": "blender render" },
-      { "name": "unreal render" },
-      { "name": "octane render" },
-      { "name": "ray tracing" }
-    ]
-  },
-  {
-    "category": "Post-processing",
-    "items": [
-      { "name": "Photoshop Effects" },
-      { "name": "Color Correction" },
-      { "name": "Digital Retouching" },
-      { "name": "Blurring" },
-      { "name": "Sharpening" },
-      { "name": "Noise Reduction" },
-      { "name": "Texture Overlay" }
-    ]
-  },
-  {
-    "category": "Advanced Techniques",
-    "items": [
-      { "name": "AI-Generated Art" },
-      { "name": "Deep Dream" },
-      { "name": "Neural Style Transfer" },
-      { "name": "Generative Adversarial Networks (GANs)" },
-      { "name": "Algorithmic Patterning" },
-      { "name": "Fractal Art" },
-      { "name": "Procedural Texturing" }
-    ]
-  },
-  {
-    "category": "Artist Styles",
-    "items": [
-      { "name": "Rembrandt van Rijn" },
-      { "name": "Georgia O'Keeffe" },
-      { "name": "Wassily Kandinsky" },
-      { "name": "Yayoi Kusama" },
-      { "name": "Gustav Klimt" },
-      { "name": "Edvard Munch" },
-      { "name": "Hieronymus Bosch" },
-      { "name": "Banksy" },
-      { "name": "Katsushika Hokusai" },
-      { "name": "Artemisia Gentileschi" },
-      { "name": "Jean-Michel Basquiat" },
-      { "name": "Ai Weiwei" },
-      { "name": "Caravaggio" },
-      { "name": "Frida Kahlo" },
-      { "name": "Jackson Pollock" },
-      { "name": "Egon Schiele" },
-      { "name": "Henri Matisse" },
-      { "name": "Beatrix Potter" },
-      { "name": "Keith Haring" },
-      { "name": "Tamara de Lempicka" },
-      { "name": "René Magritte" },
-      { "name": "Michelangelo" },
-      { "name": "Takashi Murakami" },
-      { "name": "Piet Mondrian" },
-      { "name": "Mary Cassatt" }
-    ]
-  }
-],
-"Art Movements":[
-  {
-    "category": "Renaissance",
-    "items": [
-      { "name": "High Renaissance" },
-      { "name": "Early Renaissance" },
-      { "name": "Mannerism" },
-      { "name": "Northern Renaissance" },
-      { "name": "Italian Renaissance" }
-    ]
-  },
-  {
-    "category": "Baroque",
-    "items": [
-      { "name": "Caravaggism" },
-      { "name": "Flemish Baroque" },
-      { "name": "Dutch Golden Age" },
-      { "name": "Spanish Baroque" },
-      { "name": "Baroque Sculpture" }
-    ]
-  },
-  {
-    "category": "Romanticism",
-    "items": [
-      { "name": "Dark Romanticism" },
-      { "name": "Neoclassicism" },
-      { "name": "Symbolism" },
-      { "name": "Pre-Raphaelite Brotherhood" },
-      { "name": "Romantic Landscape" }
-    ]
-  },
-  {
-    "category": "Impressionism",
-    "items": [
-      { "name": "Post-Impressionism" },
-      { "name": "Pointillism" },
-      { "name": "Neo-Impressionism" },
-      { "name": "American Impressionism" },
-      { "name": "Impressionist Sculpture" }
-    ]
-  },
-  {
-    "category": "Modernism",
-    "items": [
-      { "name": "Cubism" },
-      { "name": "Fauvism" },
-      { "name": "Expressionism" },
-      { "name": "Surrealism" },
-      { "name": "Abstract Expressionism" }
-    ]
-  },
-  {
-    "category": "Art Nouveau",
-    "items": [
-      { "name": "Vienna Secession" },
-      { "name": "Jugendstil" },
-      { "name": "Modern Style" },
-      { "name": "Glasgow Style" },
-      { "name": "Stile Liberty" }
-    ]
-  },
-  {
-    "category": "Art Deco",
-    "items": [
-      { "name": "Streamline Moderne" },
-      { "name": "Miami Art Deco" },
-      { "name": "Skyscraper Deco" },
-      { "name": "Zigzag Moderne" },
-      { "name": "French Art Deco" }
-    ]
-  },
-  {
-    "category": "Surrealism",
-    "items": [
-      { "name": "Dada" },
-      { "name": "Magic Realism" },
-      { "name": "Dreamscapes" },
-      { "name": "Automatism" },
-      { "name": "Frottage and Decalcomania" }
-    ]
-  },
-  {
-    "category": "Contemporary Art",
-    "items": [
-      { "name": "Street Art" },
-      { "name": "Pop Art" },
-      { "name": "Conceptual Art" },
-      { "name": "Minimalism" },
-      { "name": "Digital Art" }
-    ]
-  },
-  {
-    "category": "Postmodernism",
-    "items": [
-      { "name": "Neo-Expressionism" },
-      { "name": "Appropriation Art" },
-      { "name": "Installation Art" },
-      { "name": "Performance Art" },
-      { "name": "Deconstructivism" }
-    ]
-  }
-
-]
-,"Science And Technology": [
-  {
-    "category": "Space Exploration",
-    "items": [
-      { "name": "Spacecraft Design" },
-      { "name": "Alien Landscapes" },
-      { "name": "Space Stations and Colonies" },
-      { "name": "Black Holes and Nebulae" },
-      { "name": "Exoplanets and Distant Stars" },
-      { "name": "Asteroid Mining" },
-      { "name": "Terraforming Planets" },
-      { "name": "Wormholes and Time Dilation" },
-      { "name": "Space Tourism" }
-    ]
-  },
-  {
-    "category": "Robotics and AI",
-    "items": [
-      { "name": "Humanoid Robots" },
-      { "name": "Cybernetics" },
-      { "name": "AI in Society" },
-      { "name": "Robot Companions" },
-      { "name": "Autonomous Vehicles" },
-      { "name": "Robotic Exoskeletons" },
-      { "name": "AI Art and Creativity" },
-      { "name": "Robotics in Medicine" }
-    ]
-  },
-  {
-    "category": "Futurism",
-    "items": [
-      { "name": "Smart Cities" },
-      { "name": "Technological Utopias/Dystopias" },
-      { "name": "Future Transportation" },
-      { "name": "Nanotechnology" },
-      { "name": "Virtual Reality Worlds" },
-      { "name": "Augmented Reality Interfaces" },
-      { "name": "Transhumanism" },
-      { "name": "Artificial Intelligence Ethics" }
-    ]
-  }
-],
-"Psychology And Human Experience": [
-  {
-    "category": "Dreamscapes",
-    "items": [
-      { "name": "Lucid Dreams" },
-      { "name": "Surreal Environments" },
-      { "name": "Nightmares and Fantasies" },
-      { "name": "Symbolic Imagery" },
-      { "name": "Recurring Dreams" },
-      { "name": "Dreamlike Realities" },
-      { "name": "Shapeshifting Worlds" },
-      { "name": "Dream Interpretation" }
-    ]
-  },
-  {
-    "category": "Emotional States",
-    "items": [
-      { "name": "Abstract Depictions of Emotions" },
-      { "name": "The Human Condition" },
-      { "name": "Mental Health Awareness" },
-      { "name": "Inner Worlds" },
-      { "name": "Joy and Euphoria" },
-      { "name": "Grief and Loss" },
-      { "name": "Anxiety and Fear" },
-      { "name": "Love and Affection" }
-    ]
-  },
-  {
-    "category": "Cognitive Science",
-    "items": [
-      { "name": "Brain Networks" },
-      { "name": "Perception and Reality" },
-      { "name": "Memory Palaces" },
-      { "name": "Decision-Making Processes" },
-      { "name": "Cognitive Biases" },
-      { "name": "Artificial Intelligence and Cognition" },
-      { "name": "Consciousness and Awareness" },
-      { "name": "Neuroplasticity" }
-    ]
-  }
-],
-"Natural Elements": [
-  {
-    "category": "Landscape",
-    "items": [
-      { "name": "Misty Mountain Peak" },
-      { "name": "Verdant Valley" },
-      { "name": "Barren Desert Dune" },
-      { "name": "Ancient Forest" },
-      { "name": "Pristine Beach" },
-      { "name": "Frozen Tundra" },
-      { "name": "Rolling Grassland" },
-      { "name": "Deep Canyon" },
-      { "name": "Tropical Island" },
-      { "name": "Rugged Plateau" },
-      { "name": "Majestic Fjord" },
-      { "name": "Vibrant Coral Reef" },
-      { "name": "Active Volcano" },
-      { "name": "Melting Glacier" },
-      { "name": "Crystal Cave" }
-    ]
-  },
-  {
-    "category": "Water Feature",
-    "items": [
-      { "name": "Vast Ocean" },
-      { "name": "Winding River" },
-      { "name": "Serene Lake" },
-      { "name": "Cascading Waterfall" },
-      { "name": "Erupting Geyser" },
-      { "name": "Steaming Hot Spring" },
-      { "name": "Murky Swamp" },
-      { "name": "Tranquil Lagoon" },
-      { "name": "Towering Iceberg" },
-      { "name": "Fertile Delta" },
-      { "name": "Tidal Estuary" },
-      { "name": "Hidden Underground River" },
-      { "name": "Bubbling Thermal Vent" },
-      { "name": "Sheltered Bay" },
-      { "name": "Narrow Fjord" }
-    ]
-  },
-  {
-    "category": "Weather Phenomenon",
-    "items": [
-      { "name": "Raging Thunderstorm" },
-      { "name": "Vivid Rainbow" },
-      { "name": "Shimmering Aurora" },
-      { "name": "Twisting Tornado" },
-      { "name": "Powerful Hurricane" },
-      { "name": "Howling Blizzard" },
-      { "name": "Dense Fog" },
-      { "name": "Pelting Hailstorm" },
-      { "name": "Shimmering Mirage" },
-      { "name": "Swirling Dust Devil" },
-      { "name": "Ethereal St. Elmo's Fire" },
-      { "name": "Mysterious Ball Lightning" },
-      { "name": "Glowing Sun Dog" },
-      { "name": "Ethereal Moonbow" },
-      { "name": "Luminous Halo" }
-    ]
-  },
-  {
-    "category": "Flora",
-    "items": [
-      { "name": "Ancient Oak" },
-      { "name": "Blooming Cherry Blossom" },
-      { "name": "Unfurling Fern" },
-      { "name": "Soft Moss Carpet" },
-      { "name": "Glowing Bioluminescent Fungus" },
-      { "name": "Floating Algae Bloom" },
-      { "name": "Resilient Saguaro Cactus" },
-      { "name": "Twisting Vine" },
-      { "name": "Swaying Prairie Grass" },
-      { "name": "Colorful Lichen" },
-      { "name": "Fragrant Lavender Bush" },
-      { "name": "Undulating Kelp Forest" },
-      { "name": "Towering Bamboo" },
-      { "name": "Twisted Mangrove Root" },
-      { "name": "Cunning Venus Flytrap" }
-    ]
-  },
-  {
-    "category": "Fauna",
-    "items": [
-      { "name": "Majestic Lion" },
-      { "name": "Soaring Eagle" },
-      { "name": "Basking Iguana" },
-      { "name": "Leaping Frog" },
-      { "name": "Darting Koi Fish" },
-      { "name": "Iridescent Butterfly" },
-      { "name": "Orb-Weaving Spider" },
-      { "name": "Spiral-Shelled Nautilus" },
-      { "name": "Scuttling Hermit Crab" },
-      { "name": "Pulsating Jellyfish" },
-      { "name": "Spiny Sea Urchin" },
-      { "name": "Intelligent Octopus" },
-      { "name": "Bounding Kangaroo" },
-      { "name": "Wise Orangutan" },
-      { "name": "Breaching Humpback Whale" }
-    ]
-  }
-]
-
+        { "name": "Neuronal Dynamics and Brain Waves" },
+        { "name": "Computational Neuroscience" }
+      ]
+    },
+    {
+      "category": "Sacred Geometry",
+      "items": [
+        { "name": "The Flower of Life" },
+        { "name": "Metatron's Cube" },
+        { "name": "The Tree of Life (Kabbalah)" },
+        { "name": "The Sri Yantra" },
+        { "name": "Vesica Piscis" },
+        { "name": "The Geometry of Mandalas" }
+      ]
+    },
+    {
+      "category": "Cognitive Science and Perception",
+      "items": [
+        { "name": "Perceptual Illusions" },
+        { "name": "Gestalt Principles" },
+        { "name": "Bayesian Models of Perception" },
+        { "name": "Information Processing in the Brain" },
+        { "name": "Theories of Consciousness (Integrated Information Theory, Global Workspace Theory)" },
+        { "name": "The Mathematics of Attention and Memory" }
+      ]
+    },
+    {
+      "category": "Temporal Mechanics and Time Travel",
+      "items": [
+        { "name": "Closed Timelike Curves" },
+        { "name": "Time Dilation and Relativity" },
+        { "name": "Paradoxes of Time Travel (Grandfather Paradox, Bootstrap Paradox)" },
+        { "name": "Causal Loops" },
+        { "name": "The Arrow of Time and Entropy" },
+        { "name": "Chronotopes in Literature and Art" }
+      ]
+    }
+  ],
+  "Prompt Elements": [
+    {
+      "category": "Visual Style",
+      "items": [
+        { "name": "Oil Painting" },
+        { "name": "Watercolor" },
+        { "name": "Digital Art" },
+        { "name": "Charcoal Drawing" },
+        { "name": "Acrylic Painting" },
+        { "name": "Ink Wash" },
+        { "name": "Mixed Media" },
+        { "name": "2D Art" },
+        { "name": "3D Rendering" },
+        { "name": "Isometric View" },
+        { "name": "Perspective Drawing" },
+        { "name": "Stereoscopic 3D" },
+        { "name": "Virtual Reality" },
+        { "name": "Cubism" },
+        { "name": "Painterly" },
+        { "name": "Tempera" },
+        { "name": "Gouache" },
+        { "name": "Ink Illustration" },
+        { "name": "Pen and Ink" },
+        { "name": "Ligne Claire" },
+        { "name": "Animation Art" },
+        { "name": "Daguerreotype" },
+        { "name": "Infographic" },
+        { "name": "Schematic" },
+        { "name": "Technical Drawing" },
+        { "name": "CGI" }
+      ]
+    },
+    {
+      "category": "Photography",
+      "items": [
+        { "name": "Film Photography" },
+        { "name": "Digital Photography" },
+        { "name": "DSLR" },
+        { "name": "Mirrorless Camera" },
+        { "name": "Polaroid" },
+        { "name": "Macro Photography" },
+        { "name": "Wide Angle Lens" },
+        { "name": "Sony Alpha α7" },
+        { "name": "Nikon D850" },
+        { "name": "Cinestill 800T" },
+        { "name": "Medium Format Hasselblad" },
+        { "name": "Telephoto" }
+      ]
+    },
+    {
+      "category": "Color and Lighting",
+      "items": [
+        { "name": "Monochrome" },
+        { "name": "Vibrant Colors" },
+        { "name": "Muted Tones" },
+        { "name": "Sepia Tone" },
+        { "name": "Color Grading" },
+        { "name": "Pastel Colors" },
+        { "name": "High Contrast" },
+        { "name": "Natural Lighting" },
+        { "name": "Studio Lighting" },
+        { "name": "Candlelight" },
+        { "name": "Backlighting" },
+        { "name": "High-Key Lighting" },
+        { "name": "Low-Key Lighting" },
+        { "name": "Chiaroscuro" },
+        { "name": "Cinecolor" },
+        { "name": "Cold Colours" },
+        { "name": "Warm Colors" },
+        { "name": "Tonal Colors" },
+        { "name": "Split Lighting" },
+        { "name": "Rembrandt Lighting" },
+        { "name": "Golden Hour" },
+        { "name": "Blue Hour" },
+        { "name": "Volumetric Lighting" }
+      ]
+    },
+    {
+      "category": "Composition",
+      "items": [
+        { "name": "Geometric Shapes" },
+        { "name": "Abstract Forms" },
+        { "name": "Symmetry" },
+        { "name": "Fractal Geometry" },
+        { "name": "Minimalism" },
+        { "name": "Sacred Geometry" },
+        { "name": "Tessellation" },
+        { "name": "Rule of Thirds" },
+        { "name": "Fibonacci Composition" },
+        { "name": "Dynamic Composition" },
+        { "name": "Intimate Portrait Composition" },
+        { "name": "Double Exposure" }
+      ]
+    },
+    {
+      "category": "Mood and Concept",
+      "items": [
+        { "name": "Emotion" },
+        { "name": "Mood" },
+        { "name": "Conceptual Art" },
+        { "name": "Metaphor" },
+        { "name": "Allegory" },
+        { "name": "Narrative" },
+        { "name": "Symbolism" },
+        { "name": "atmospheric" },
+        { "name": "dramatic" },
+        { "name": "beautiful" },
+        { "name": "organic" },
+        { "name": "magical" },
+        { "name": "mystical" },
+        { "name": "majestic" },
+        { "name": "elegant" },
+        { "name": "ethereal" },
+        { "name": "eerie" },
+        { "name": "evil" },
+        { "name": "victorian" },
+        { "name": "floral" },
+        { "name": "epic" },
+        { "name": "ruined" },
+        { "name": "dirty" },
+        { "name": "grunge" },
+        { "name": "mystery" }
+      ]
+    },
+    {
+      "category": "Technical Elements",
+      "items": [
+        { "name": "f/N (aperture)" },
+        { "name": "Short Exposure" },
+        { "name": "Long Exposure" },
+        { "name": "ISO" },
+        { "name": "Bokeh" },
+        { "name": "Sharp Focus" },
+        { "name": "Depth of Field" },
+        { "name": "Low Angle" },
+        { "name": "Wide Angle" },
+        { "name": "Aerial View" },
+        { "name": "Satellite View" }
+      ]
+    },
+    {
+      "category": "Detail and Quality",
+      "items": [
+        { "name": "very detailed" },
+        { "name": "highly detailed" },
+        { "name": "insanely detailed" },
+        { "name": "hyper detailed" },
+        { "name": "ultra detailed" },
+        { "name": "micro details" },
+        { "name": "ornate" },
+        { "name": "intricate" },
+        { "name": "opulent" },
+        { "name": "4k" },
+        { "name": "8k" },
+        { "name": "16k" },
+        { "name": "32k" },
+        { "name": "full HD" },
+        { "name": "ultra HD" },
+        { "name": "UHD" },
+        { "name": "--hd" }
+      ]
+    },
     
-  }
-  
+    {
+      "category": "Realism and Rendering",
+      "items": [
+        { "name": "ultra realistic" },
+        { "name": "hyper realistic" },
+        { "name": "super realistic" },
+        { "name": "photorealistic" },
+        { "name": "unbiased render" },
+        { "name": "blender render" },
+        { "name": "unreal render" },
+        { "name": "octane render" },
+        { "name": "ray tracing" }
+      ]
+    },
+    {
+      "category": "Post-processing",
+      "items": [
+        { "name": "Photoshop Effects" },
+        { "name": "Color Correction" },
+        { "name": "Digital Retouching" },
+        { "name": "Blurring" },
+        { "name": "Sharpening" },
+        { "name": "Noise Reduction" },
+        { "name": "Texture Overlay" }
+      ]
+    },
+    {
+      "category": "Advanced Techniques",
+      "items": [
+        { "name": "AI-Generated Art" },
+        { "name": "Deep Dream" },
+        { "name": "Neural Style Transfer" },
+        { "name": "Generative Adversarial Networks (GANs)" },
+        { "name": "Algorithmic Patterning" },
+        { "name": "Fractal Art" },
+        { "name": "Procedural Texturing" }
+      ]
+    },
+    {
+      "category": "Artist Styles",
+      "items": [
+        { "name": "Rembrandt van Rijn" },
+        { "name": "Georgia O'Keeffe" },
+        { "name": "Wassily Kandinsky" },
+        { "name": "Yayoi Kusama" },
+        { "name": "Gustav Klimt" },
+        { "name": "Edvard Munch" },
+        { "name": "Hieronymus Bosch" },
+        { "name": "Banksy" },
+        { "name": "Katsushika Hokusai" },
+        { "name": "Artemisia Gentileschi" },
+        { "name": "Jean-Michel Basquiat" },
+        { "name": "Ai Weiwei" },
+        { "name": "Caravaggio" },
+        { "name": "Frida Kahlo" },
+        { "name": "Jackson Pollock" },
+        { "name": "Egon Schiele" },
+        { "name": "Henri Matisse" },
+        { "name": "Beatrix Potter" },
+        { "name": "Keith Haring" },
+        { "name": "Tamara de Lempicka" },
+        { "name": "René Magritte" },
+        { "name": "Michelangelo" },
+        { "name": "Takashi Murakami" },
+        { "name": "Piet Mondrian" },
+        { "name": "Mary Cassatt" }
+      ]
+    }
+  ],
+  "Art Movements": [
+    {
+      "category": "Renaissance",
+      "items": [
+        { "name": "High Renaissance" },
+        { "name": "Early Renaissance" },
+        { "name": "Mannerism" },
+        { "name": "Northern Renaissance" },
+        { "name": "Italian Renaissance" }
+      ]
+    },
+    {
+      "category": "Baroque",
+      "items": [
+        { "name": "Caravaggism" },
+        { "name": "Flemish Baroque" },
+        { "name": "Dutch Golden Age" },
+        { "name": "Spanish Baroque" },
+        { "name": "Baroque Sculpture" }
+      ]
+    },
+    {
+      "category": "Romanticism",
+      "items": [
+        { "name": "Dark Romanticism" },
+        { "name": "Neoclassicism" },
+        { "name": "Symbolism" },
+        { "name": "Pre-Raphaelite Brotherhood" },
+        { "name": "Romantic Landscape" }
+      ]
+    },
+    {
+      "category": "Impressionism",
+      "items": [
+        { "name": "Post-Impressionism" },
+        { "name": "Pointillism" },
+        { "name": "Neo-Impressionism" },
+        { "name": "American Impressionism" },
+        { "name": "Impressionist Sculpture" }
+      ]
+    },
+    {
+      "category": "Modernism",
+      "items": [
+        { "name": "Cubism" },
+        { "name": "Fauvism" },
+        { "name": "Expressionism" },
+        { "name": "Surrealism" },
+        { "name": "Abstract Expressionism" }
+      ]
+    },
+    {
+      "category": "Art Nouveau",
+      "items": [
+        { "name": "Vienna Secession" },
+        { "name": "Jugendstil" },
+        { "name": "Modern Style" },
+        { "name": "Glasgow Style" },
+        { "name": "Stile Liberty" }
+      ]
+    },
+    {
+      "category": "Art Deco",
+      "items": [
+        { "name": "Streamline Moderne" },
+        { "name": "Miami Art Deco" },
+        { "name": "Skyscraper Deco" },
+        { "name": "Zigzag Moderne" },
+        { "name": "French Art Deco" }
+      ]
+    },
+    {
+      "category": "Surrealism",
+      "items": [
+        { "name": "Dada" },
+        { "name": "Magic Realism" },
+        { "name": "Dreamscapes" },
+        { "name": "Automatism" },
+        { "name": "Frottage and Decalcomania" }
+      ]
+    },
+    {
+      "category": "Contemporary Art",
+      "items": [
+        { "name": "Street Art" },
+        { "name": "Pop Art" },
+        { "name": "Conceptual Art" },
+        { "name": "Minimalism" },
+        { "name": "Digital Art" }
+      ]
+    },
+    {
+      "category": "Postmodernism",
+      "items": [
+        { "name": "Neo-Expressionism" },
+        { "name": "Appropriation Art" },
+        { "name": "Installation Art" },
+        { "name": "Performance Art" },
+        { "name": "Deconstructivism" }
+      ]
+    }
+  ],
+  "Artists and Styles": [
+    {
+      "category": "Classical Artists",
+      "items": [
+        { "name": "Salvador Dali" },
+        { "name": "Alphonse Mucha" },
+        { "name": "Leonardo Da Vinci" },
+        { "name": "Caravaggio" },
+        { "name": "Jean-Léon Gérôme" },
+        { "name": "Gustave Doré" },
+        { "name": "Matthäus Merian the Elder" },
+        { "name": "Martin Schongauer" },
+        { "name": "John Singer Sargent" },
+        { "name": "Johannes Vermeer" },
+        { "name": "Adolph Von Menzel" },
+        { "name": "Norman Rockwell" },
+        { "name": "Jessie Willcox Smith" },
+        { "name": "Édouard Cortès" },
+        { "name": "Claude Monet" },
+        { "name": "François Boucher" },
+        { "name": "John Frederick Kensett" },
+        { "name": "Ivan Shishkin" },
+        { "name": "Gian Lorenzo Bernini" },
+        { "name": "Franz Xaver Winterhalter" },
+        { "name": "Mór Than" },
+        { "name": "Henry Fuseli" },
+        { "name": "Rosa Bonheur" },
+        { "name": "Asher Brown Durand" },
+        { "name": "William-Adolphe Bouguereau" },
+        { "name": "John Everett Millais" },
+        { "name": "Edward Burne-Jones" },
+        { "name": "William Powell Frith" },
+        { "name": "John Collier" },
+        { "name": "Albert Joseph Moore" },
+        { "name": "Ferdinand Knab" },
+        { "name": "Albrecht Dürer" }
+      ]
+    },
+    {
+      "category": "Fantasy Artists",
+      "items": [
+        { "name": "Frank Frazetta" },
+        { "name": "Greg Rutkowski" },
+        { "name": "Aleksi Briclot" },
+        { "name": "Laura Sava" },
+        { "name": "Kerem Beyit" },
+        { "name": "John Berkey" },
+        { "name": "Luis Rojo" },
+        { "name": "Anato Finnstark" },
+        { "name": "Randy Vargas" },
+        { "name": "Bayard Wu" },
+        { "name": "Marc Simonetti" },
+        { "name": "Johan Grenier" },
+        { "name": "Brian Froud" },
+        { "name": "Jesper Ejsing" },
+        { "name": "Noah Bradley" },
+        { "name": "Diego Gisbert Llorens" }
+      ]
+    },
+    {
+      "category": "Anime Artists",
+      "items": [
+        { "name": "Naoko Takeuchi" },
+        { "name": "Satoshi Kon" },
+        { "name": "Kentaro Miura" },
+        { "name": "Hayao Miyazaki" },
+        { "name": "Akira Toriyama" },
+        { "name": "Sui Ishida" },
+        { "name": "Hiroshi Yoshida" },
+        { "name": "Makoto Shinkai" },
+        { "name": "Katsuya Terada" },
+        { "name": "Yoji Shinkawa" },
+        { "name": "Tsutomu Nihei" },
+        { "name": "Takashi Takeuchi" },
+        { "name": "Akihiko Yoshida" },
+        { "name": "Krenz Cushart" },
+        { "name": "Katsuhiro Otomo" },
+        { "name": "Ilya Kuvshinov" },
+        { "name": "Ross Tran" }
+      ]
+    },
+    {
+      "category": "Line-Art Artists",
+      "items": [
+        { "name": "Jean Giraud (Moebius)" },
+        { "name": "Jean-Claude Mézières" },
+        { "name": "Dave Gibbons" },
+        { "name": "Philippe Buchet" },
+        { "name": "John Buscema" },
+        { "name": "Arthur Adams" },
+        { "name": "Mark Brooks" },
+        { "name": "Boban Savić GETO" },
+        { "name": "Vania Zouravliov" },
+        { "name": "J. C. Leyendecker" },
+        { "name": "Aaron Horkey" },
+        { "name": "Brian Kesinger" },
+        { "name": "Laurie Greasley" },
+        { "name": "Yoshitaka Amano" },
+        { "name": "Dustin Nguyen" },
+        { "name": "Richard Corben" },
+        { "name": "Jack Davis" },
+        { "name": "Alex Toth" },
+        { "name": "Frank Miller" },
+        { "name": "Steve Dillon" },
+        { "name": "Jordi Bernet" },
+        { "name": "Jack Kirby" },
+        { "name": "John Romita Jr" },
+        { "name": "Jim Steranko" },
+        { "name": "Geof Darrow" }
+      ]
+    },
+    {
+      "category": "Contemporary Artists",
+      "items": [
+        { "name": "Zdzisław Beksiński" },
+        { "name": "Rutger van de Steeg" },
+        { "name": "Arseniy Chebynkin" },
+        { "name": "Simon Stålenhag" },
+        { "name": "Julian Calle" },
+        { "name": "Jannis Mayr" },
+        { "name": "RHADS" },
+        { "name": "Darek Zabrocki" },
+        { "name": "Pete Amachree" },
+        { "name": "Christian Haley" },
+        { "name": "Alex Nice" },
+        { "name": "Emmanuel Shiu" },
+        { "name": "Yota Tasaki" },
+        { "name": "Jaime Jasso" },
+        { "name": "Bart Tchorzewski" },
+        { "name": "Scott Richard" },
+        { "name": "Ryan Church" },
+        { "name": "Artgerm" },
+        { "name": "Sakimichan" },
+        { "name": "Peter Mohrbacher" },
+        { "name": "Nicholas Delort" },
+        { "name": "Craig Mullins" },
+        { "name": "Daniel Gerhartz" },
+        { "name": "David Kassan" },
+        { "name": "Pino Daeni" },
+        { "name": "Karol Bak" },
+        { "name": "Bastien Grivet" },
+        { "name": "Andreas Rocha" },
+        { "name": "Jordan Grimmer" },
+        { "name": "Nick Gindraux" },
+        { "name": "Emil Melmoth" },
+        { "name": "Thomas Kinkade" },
+        { "name": "WLOP" }
+      ]
+    },
+    {
+      "category": "Cinematographers",
+      "items": [
+        { "name": "Roger Deakins" },
+        { "name": "Rodrigo Prieto" },
+        { "name": "Robert Richardson" },
+        { "name": "Emmanuel Lubezki" },
+        { "name": "Christopher Doyle" },
+        { "name": "Matthew Libatique" },
+        { "name": "Dion Beebe" },
+        { "name": "Chung-hoon Chung" },
+        { "name": "Janusz Kamiński" },
+        { "name": "Vittorio Storaro" },
+        { "name": "Wally Pfister" },
+        { "name": "Darius Khondji" },
+        { "name": "Robert Elswit" },
+        { "name": "Bill Pope" },
+        { "name": "Linus Sandgren" },
+        { "name": "Claudio Miranda" },
+        { "name": "Geoffrey Unsworth" },
+        { "name": "John Mathieson" },
+        { "name": "Greig Fraser" },
+        { "name": "James Cameron" },
+        { "name": "Ridley Scott" },
+        { "name": "Denis Villeneuve" }
+      ]
+    },
+    {
+      "category": "Photographers",
+      "items": [
+        { "name": "W. & D. Downey" },
+        { "name": "Masao Yamamoto" },
+        { "name": "Ashley von Helsing" },
+        { "name": "Annie Leibovitz" },
+        { "name": "Marcel Lech" },
+        { "name": "Frans Lanting" },
+        { "name": "Art Wolfe" },
+        { "name": "David Doubilet" },
+        { "name": "Steve McCurry" },
+        { "name": "Sebastião Salgado" },
+        { "name": "Michael Kenna" },
+        { "name": "Toby Harriman" },
+        { "name": "Ansel Adams" },
+        { "name": "Yousuf Karsh" },
+        { "name": "Robert Capa" },
+        { "name": "Don McCullin" },
+        { "name": "Henri Cartier-Bresson" },
+        { "name": "Robert Doisneau" },
+        { "name": "Brassaï" },
+        { "name": "Bert Hardy" },
+        { "name": "Edward Steichen" },
+        { "name": "Philippe Halsman" },
+        { "name": "Horst P Horst" },
+        { "name": "Cecil Beaton" },
+        { "name": "Brian Duffy" },
+        { "name": "Irving Penn" },
+        { "name": "O Winston Link" },
+        { "name": "Weegee" },
+        { "name": "Joel Meyerowitz" },
+        { "name": "Jay Maisel" },
+        { "name": "Jerry Uelsmann" },
+        { "name": "André Kertész" }
+      ]
+    }],
+  "Science And Technology": [
+    {
+      "category": "Space Exploration",
+      "items": [
+        { "name": "Spacecraft Design" },
+        { "name": "Alien Landscapes" },
+        { "name": "Space Stations and Colonies" },
+        { "name": "Black Holes and Nebulae" },
+        { "name": "Exoplanets and Distant Stars" },
+        { "name": "Asteroid Mining" },
+        { "name": "Terraforming Planets" },
+        { "name": "Wormholes and Time Dilation" },
+        { "name": "Space Tourism" }
+      ]
+    },
+    {
+      "category": "Robotics and AI",
+      "items": [
+        { "name": "Humanoid Robots" },
+        { "name": "Cybernetics" },
+        { "name": "AI in Society" },
+        { "name": "Robot Companions" },
+        { "name": "Autonomous Vehicles" },
+        { "name": "Robotic Exoskeletons" },
+        { "name": "AI Art and Creativity" },
+        { "name": "Robotics in Medicine" }
+      ]
+    },
+    {
+      "category": "Futurism",
+      "items": [
+        { "name": "Smart Cities" },
+        { "name": "Technological Utopias/Dystopias" },
+        { "name": "Future Transportation" },
+        { "name": "Nanotechnology" },
+        { "name": "Virtual Reality Worlds" },
+        { "name": "Augmented Reality Interfaces" },
+        { "name": "Transhumanism" },
+        { "name": "Artificial Intelligence Ethics" }
+      ]
+    }
+  ],
+  "Psychology And Human Experience": [
+    {
+      "category": "Dreamscapes",
+      "items": [
+        { "name": "Lucid Dreams" },
+        { "name": "Surreal Environments" },
+        { "name": "Nightmares and Fantasies" },
+        { "name": "Symbolic Imagery" },
+        { "name": "Recurring Dreams" },
+        { "name": "Dreamlike Realities" },
+        { "name": "Shapeshifting Worlds" },
+        { "name": "Dream Interpretation" }
+      ]
+    },
+    {
+      "category": "Emotional States",
+      "items": [
+        { "name": "Abstract Depictions of Emotions" },
+        { "name": "The Human Condition" },
+        { "name": "Mental Health Awareness" },
+        { "name": "Inner Worlds" },
+        { "name": "Joy and Euphoria" },
+        { "name": "Grief and Loss" },
+        { "name": "Anxiety and Fear" },
+        { "name": "Love and Affection" }
+      ]
+    },
+    {
+      "category": "Cognitive Science",
+      "items": [
+        { "name": "Brain Networks" },
+        { "name": "Perception and Reality" },
+        { "name": "Memory Palaces" },
+        { "name": "Decision-Making Processes" },
+        { "name": "Cognitive Biases" },
+        { "name": "Artificial Intelligence and Cognition" },
+        { "name": "Consciousness and Awareness" },
+        { "name": "Neuroplasticity" }
+      ]
+    }
+  ],
+  "Natural Elements": [
+    {
+      "category": "Landscape",
+      "items": [
+        { "name": "Misty Mountain Peak" },
+        { "name": "Verdant Valley" },
+        { "name": "Barren Desert Dune" },
+        { "name": "Ancient Forest" },
+        { "name": "Pristine Beach" },
+        { "name": "Frozen Tundra" },
+        { "name": "Rolling Grassland" },
+        { "name": "Deep Canyon" },
+        { "name": "Tropical Island" },
+        { "name": "Rugged Plateau" },
+        { "name": "Majestic Fjord" },
+        { "name": "Vibrant Coral Reef" },
+        { "name": "Active Volcano" },
+        { "name": "Melting Glacier" },
+        { "name": "Crystal Cave" }
+      ]
+    },
+    {
+      "category": "Water Feature",
+      "items": [
+        { "name": "Vast Ocean" },
+        { "name": "Winding River" },
+        { "name": "Serene Lake" },
+        { "name": "Cascading Waterfall" },
+        { "name": "Erupting Geyser" },
+        { "name": "Steaming Hot Spring" },
+        { "name": "Murky Swamp" },
+        { "name": "Tranquil Lagoon" },
+        { "name": "Towering Iceberg" },
+        { "name": "Fertile Delta" },
+        { "name": "Tidal Estuary" },
+        { "name": "Hidden Underground River" },
+        { "name": "Bubbling Thermal Vent" },
+        { "name": "Sheltered Bay" },
+        { "name": "Narrow Fjord" }
+      ]
+    },
+    {
+      "category": "Weather Phenomenon",
+      "items": [
+        { "name": "Raging Thunderstorm" },
+        { "name": "Vivid Rainbow" },
+        { "name": "Shimmering Aurora" },
+        { "name": "Twisting Tornado" },
+        { "name": "Powerful Hurricane" },
+        { "name": "Howling Blizzard" },
+        { "name": "Dense Fog" },
+        { "name": "Pelting Hailstorm" },
+        { "name": "Shimmering Mirage" },
+        { "name": "Swirling Dust Devil" },
+        { "name": "Ethereal St. Elmo's Fire" },
+        { "name": "Mysterious Ball Lightning" },
+        { "name": "Glowing Sun Dog" },
+        { "name": "Ethereal Moonbow" },
+        { "name": "Luminous Halo" }
+      ]
+    },
+    {
+      "category": "Flora",
+      "items": [
+        { "name": "Ancient Oak" },
+        { "name": "Blooming Cherry Blossom" },
+        { "name": "Unfurling Fern" },
+        { "name": "Soft Moss Carpet" },
+        { "name": "Glowing Bioluminescent Fungus" },
+        { "name": "Floating Algae Bloom" },
+        { "name": "Resilient Saguaro Cactus" },
+        { "name": "Twisting Vine" },
+        { "name": "Swaying Prairie Grass" },
+        { "name": "Colorful Lichen" },
+        { "name": "Fragrant Lavender Bush" },
+        { "name": "Undulating Kelp Forest" },
+        { "name": "Towering Bamboo" },
+        { "name": "Twisted Mangrove Root" },
+        { "name": "Cunning Venus Flytrap" }
+      ]
+    },
+    {
+      "category": "Fauna",
+      "items": [
+        { "name": "Majestic Lion" },
+        { "name": "Soaring Eagle" },
+        { "name": "Basking Iguana" },
+        { "name": "Leaping Frog" },
+        { "name": "Darting Koi Fish" },
+        { "name": "Iridescent Butterfly" },
+        { "name": "Orb-Weaving Spider" },
+        { "name": "Spiral-Shelled Nautilus" },
+        { "name": "Scuttling Hermit Crab" },
+        { "name": "Pulsating Jellyfish" },
+        { "name": "Spiny Sea Urchin" },
+        { "name": "Intelligent Octopus" },
+        { "name": "Bounding Kangaroo" },
+        { "name": "Wise Orangutan" },
+        { "name": "Breaching Humpback Whale" }
+      ]
+    }
+  ]
+}

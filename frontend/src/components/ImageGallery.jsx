@@ -1,25 +1,29 @@
-import React, { useEffect, useRef } from 'react';
-import { Box, Container, Typography } from '@mui/material';
+import React, { useEffect, useRef, useState } from 'react';
+import { Box, Container, Typography, CircularProgress } from '@mui/material';
 import { motion, useAnimation } from 'framer-motion';
+import axios from 'axios';
 import SideMenu from './Sidemenu.jsx';
 
-// Import your local images here
-import image1 from '../assets/gallery/1.png';
-import image2 from '../assets/gallery/2.png';
-import image3 from '../assets/gallery/3.png';
-// Import more images as needed
-
 const ImageGallery = () => {
+  const [images, setImages] = useState([]);
+  const [loading, setLoading] = useState(true);
   const controls = useAnimation();
   const galleryRef = useRef(null);
 
-  // Mock data using local images
-  const images = [
-    { id: 1, url: image1, prompt: 'A serene landscape' },
-    { id: 2, url: image2, prompt: 'Abstract art in vibrant colors' },
-    { id: 3, url: image3, prompt: 'Futuristic cityscape' },
-    // Add more images as needed
-  ];
+  useEffect(() => {
+    const fetchImages = async () => {
+      try {
+        const response = await axios.get('http://localhost:5001/api/images');
+        setImages(response.data);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching images:', error);
+        setLoading(false);
+      }
+    };
+
+    fetchImages();
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,6 +41,14 @@ const ImageGallery = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [controls]);
+
+  if (loading) {
+    return (
+      <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh">
+        <CircularProgress />
+      </Box>
+    );
+  }
 
   return (
     <Box className="flex-box">

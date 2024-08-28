@@ -102,6 +102,7 @@ const ParametersAccordion = ({ state, handleFieldChange }) => {
                 <MenuItem value="5">5</MenuItem>
                 <MenuItem value="5.1">5.1</MenuItem>
                 <MenuItem value="5.2">5.2</MenuItem>
+                <MenuItem value="6">6</MenuItem>
               </Select>
             </FormControl>
           </Box>

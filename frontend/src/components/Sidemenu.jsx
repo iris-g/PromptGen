@@ -11,6 +11,7 @@ const SideMenu = () => {
       sx={{
         width: { xs: 200, sm: 240 },
         flexShrink: 0,
+        
         [`& .MuiDrawer-paper`]: {
           width: { xs: 200, sm: 240 },
           boxSizing: 'border-box',
@@ -18,6 +19,7 @@ const SideMenu = () => {
           color: (theme) => theme.palette.primary.contrastText,
           paddingTop: 2,
           paddingBottom: 2,
+          paddingLeft : 2,
         },
       }}
     >
@@ -37,7 +39,7 @@ const SideMenu = () => {
           { text: 'Home', path: '/' },
           { text: 'Image Gallery', path: '/imagegallery' },
           { text: 'About', path: '/about' },
-          { text: 'Contact', path: '/contact' }
+        
         ].map(({ text, path }) => (
           <ListItem 
             button 

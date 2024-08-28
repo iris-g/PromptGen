@@ -114,7 +114,8 @@ const PromptBuilder = () => {
 
   const handleRandomSentence = () => {
     const randomSentence = generateRandomSentence();
-    dispatch({ type: 'UPDATE_PROMPT', value: randomSentence });
+    dispatch({ type: 'UPDATE_FIELD', field: 'customText', value: randomSentence });
+    // This will trigger the normal prompt generation logic, including parameters and themes
   };
 
   return (
@@ -124,8 +125,7 @@ const PromptBuilder = () => {
         maxWidth="md" 
         sx={{ 
           flexGrow: 1, 
-          ml: 0, // Ensure no left margin 
-          pl: 0, // Ensure no left padding
+   
           display: 'flex', 
           flexDirection: 'column' 
         }}
@@ -136,7 +136,7 @@ const PromptBuilder = () => {
 
         <CreativeTips />
 
-        <Box component="div" className="generated-prompt" sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+        <Box component="div" className="generated-prompt" sx={{ display: 'flex', alignItems: 'center', gap: 2}}>
           <TextField
             value={state.prompt}
             onChange={handleFieldChange('prompt')}

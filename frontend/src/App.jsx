@@ -3,7 +3,7 @@ import { CssBaseline, ThemeProvider, createTheme, Box } from '@mui/material';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PromptBuilder from './components/PromptBuilder';
 import ImageGallery from './components/ImageGallery.jsx';
-import Contact from './components/Contact.jsx';
+
 import About from './components/About.jsx';
 import SideMenu from './components/Sidemenu.jsx';
 
@@ -29,14 +29,14 @@ function App() {
               flexGrow: 1, 
               p: 2, 
               boxSizing: 'border-box',
-              ml: 6, // Add margin-left for a small gap (adjust value as needed)
+              ml: 2, // Add margin-left for a small gap (adjust value as needed)
             }}
           >
             <Routes>
               <Route path="/" element={<PromptBuilder />} />
               <Route path="/imagegallery" element={<ImageGallery />} />
               <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
+            
             </Routes>
           </Box>
         </Box>
