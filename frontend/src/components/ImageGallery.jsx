@@ -1,98 +1,60 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Box, Container, Typography, CircularProgress } from '@mui/material';
-import { motion, useAnimation } from 'framer-motion';
-import axios from 'axios';
-import SideMenu from './Sidemenu.jsx';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import Carousel from 'react-material-ui-carousel';
+import { Paper, Button } from '@mui/material';
+import image1 from '../assets/gallery/1.png';
+import image2 from '../assets/gallery/2.png';
+import image3 from '../assets/gallery/3.png';
+import image4 from '../assets/gallery/4.png';
+import image5 from '../assets/gallery/5.png';
+import image6 from '../assets/gallery/6.png';
+import image7 from '../assets/gallery/7.png';
+import image8 from '../assets/gallery/8.png';
+import image9 from '../assets/gallery/9.png';
+import image10 from '../assets/gallery/10.png';
+import image11 from '../assets/gallery/11.png';
+import image12 from '../assets/gallery/12.png';
+import image13 from '../assets/gallery/13.png';
+import image14 from '../assets/gallery/14.png';
+
+// Array of image objects
+const images = [
+  { id: 1, src: image1, alt: 'Image 1' },
+  { id: 2, src: image2, alt: 'Image 2' },
+  { id: 3, src: image3, alt: 'Image 3' },
+  { id: 4, src: image4, alt: 'Image 4' },
+  { id: 5, src: image5, alt: 'Image 5' },
+  { id: 6, src: image6, alt: 'Image 6' },
+  { id: 7, src: image7, alt: 'Image 7' },
+  { id: 8, src: image8, alt: 'Image 8' },
+  { id: 9, src: image9, alt: 'Image 9' },
+  { id: 10, src: image10, alt: 'Image 10' },
+  { id: 11, src: image11, alt: 'Image 11' },
+  { id: 12, src: image12, alt: 'Image 12' },
+  { id: 13, src: image13, alt: 'Image 13' },
+  { id: 14, src: image14, alt: 'Image 14' },
+];
 
 const ImageGallery = () => {
-  const [images, setImages] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const controls = useAnimation();
-  const galleryRef = useRef(null);
-
-  useEffect(() => {
-    const fetchImages = async () => {
-      try {
-        const response = await axios.get('http://localhost:5001/api/images');
-        setImages(response.data);
-        setLoading(false);
-      } catch (error) {
-        console.error('Error fetching images:', error);
-        setLoading(false);
-      }
-    };
-
-    fetchImages();
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (galleryRef.current) {
-        const scrollY = window.scrollY;
-        const galleryTop = galleryRef.current.offsetTop;
-        const galleryHeight = galleryRef.current.offsetHeight;
-        const windowHeight = window.innerHeight;
-
-        const scrollProgress = (scrollY - galleryTop + windowHeight) / (galleryHeight + windowHeight);
-        controls.start({ opacity: scrollProgress, scale: 0.8 + scrollProgress * 0.2 });
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [controls]);
-
-  if (loading) {
-    return (
-      <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh">
-        <CircularProgress />
-      </Box>
-    );
-  }
-
   return (
-    <Box className="flex-box">
-      <SideMenu />
-      <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-        <Typography variant="h2" gutterBottom>
-          Generated Images Gallery
-        </Typography>
-        <Box ref={galleryRef} sx={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: 3 }}>
-          {images.map((image) => (
-            <motion.div
-              key={image.id}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={controls}
-              whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-              style={{ position: 'relative', overflow: 'hidden', borderRadius: '10px' }}
-            >
-              <img
-                src={image.url}
-                alt={image.prompt}
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              />
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileHover={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
-                style={{
-                  position: 'absolute',
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  padding: '10px',
-                  background: 'rgba(0, 0, 0, 0.7)',
-                  color: 'white',
-                }}
-              >
-                <Typography variant="body2">{image.prompt}</Typography>
-              </motion.div>
-            </motion.div>
-          ))}
-        </Box>
-      </Container>
-    </Box>
+    <Carousel>
+      {images.map((item) => (
+        <Item key={item.id} item={item} />
+      ))}
+    </Carousel>
   );
-};
+}
+
+function Item({ item }) {
+  return (
+    <Paper>
+      <img src={item.src} alt={item.alt} style={{ width: '100%', height: 'auto' }} />
+      <Button className="CheckButton">
+        Check it out!
+      </Button>
+    </Paper>
+  );
+}
+
 
 export default ImageGallery;

@@ -1,5 +1,5 @@
 import React, { useReducer, useRef, useCallback, useEffect } from 'react';
-import { Box, TextField, Container, IconButton, Tooltip, FormControl, InputLabel, Select, MenuItem, Typography, Button } from '@mui/material';
+import { Box, TextField, Container, IconButton, Tooltip, Link,FormControl, InputLabel, Select, MenuItem, Typography, Button } from '@mui/material';
 import { ContentCopy, Refresh as RefreshIcon, AutoFixHigh } from '@mui/icons-material';
 import { debounce } from 'lodash';
 import Header from './Header.jsx';
@@ -75,6 +75,32 @@ function reducer(state, action) {
       return state;
   }
 }
+const Footer = () => {
+  return (
+    <Box 
+      component="footer" 
+      sx={{ 
+        py: 2, 
+        px: 2, 
+        mt: 'auto', 
+        color: 'white', 
+        display: 'flex', 
+        justifyContent: 'left', 
+        gap: 2, 
+        alignItems: 'center', // Vertically centers items if they are on the same line
+      }}
+    >
+      <Typography variant="body2" color="white">
+        © 2024 Unique AI Prompt Generator. All rights reserved.
+      </Typography>
+
+      <div> | </div>
+      <Link href="/privacy" display={'inline'} color="inherit" underline="hover">
+        Privacy Policy
+      </Link>
+    </Box>
+  );
+};
 
 const PromptBuilder = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -119,17 +145,17 @@ const PromptBuilder = () => {
   };
 
   return (
-    <Box sx={{ display: 'flex', height: '100vh' }}>
+    <Box 
+    sx={{ 
+      flexGrow: 1,
+      display: 'flex', 
+      flexDirection: 'column',
+      height: '100%',
+      overflow: 'auto',
+      p: 3  
+    }}
+  >
 
-      <Container 
-        maxWidth="md" 
-        sx={{ 
-          flexGrow: 1, 
-   
-          display: 'flex', 
-          flexDirection: 'column' 
-        }}
-      >
         <Box component="div" className="generated-prompt">
           <Header logo={logo} />
         </Box>
@@ -206,8 +232,12 @@ const PromptBuilder = () => {
 
         <Box className="theme-manager-box" sx={{ mt: 4 }}>
           <ThemeManager selectedItems={state.selectedItems} handleItemClick={handleItemClick} />
-        </Box>
-      </Container>
+        </Box>  
+
+        <Box sx={{ py: 6 }} />
+        <Footer />
+    
+    
     </Box>
   );
 };

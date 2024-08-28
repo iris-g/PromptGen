@@ -3,7 +3,7 @@ import { CssBaseline, ThemeProvider, createTheme, Box } from '@mui/material';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PromptBuilder from './components/PromptBuilder';
 import ImageGallery from './components/ImageGallery.jsx';
-
+import PrivacyPolicy from './components/privacy-policy.jsx';
 import About from './components/About.jsx';
 import SideMenu from './components/Sidemenu.jsx';
 
@@ -21,22 +21,23 @@ function App() {
     <Router>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Box sx={{ display: 'flex', height: '100vh' }}>
+        <Box sx={{ display: 'flex', height: '100vh', overflow: 'hidden' }}>
           <SideMenu />
           <Box 
             component="main" 
             sx={{ 
-              flexGrow: 1, 
-              p: 2, 
+              flexGrow: 3, 
+              p: { xs: 1, sm: 2, md: 3 }, // Responsive padding
               boxSizing: 'border-box',
-              ml: 2, // Add margin-left for a small gap (adjust value as needed)
+              overflowY: 'auto', 
+              ml: 0, // Remove left margin
             }}
           >
             <Routes>
               <Route path="/" element={<PromptBuilder />} />
               <Route path="/imagegallery" element={<ImageGallery />} />
               <Route path="/about" element={<About />} />
-            
+              <Route path="/privacy" element={<PrivacyPolicy />} />
             </Routes>
           </Box>
         </Box>
