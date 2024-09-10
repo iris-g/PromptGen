@@ -1,52 +1,82 @@
 import React, { useState } from 'react';
-import { Box, Typography, Button, Collapse, IconButton } from '@mui/material';
+import { Box, Typography, Button, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const ThemeCategory = ({ category, items, selectedItems, handleItemClick }) => {
+const ThemeCategory = ({ category, items, selectedItems, handleItemClick, searchTerm }) => {
   const [expanded, setExpanded] = useState(false);
 
-  const handleToggle = () => {
-    setExpanded(!expanded);
+  const highlightMatchingText = (text, searchTerm) => {
+    if (!searchTerm) return text;
+    const parts = text.split(new RegExp(`(${searchTerm})`, 'gi'));
+    return (
+      <span>
+        {parts.map((part, index) =>
+          part.toLowerCase() === searchTerm.toLowerCase() ? (
+            <mark key={index} style={{ backgroundColor: 'yellow', color: 'black' }}>
+              {part}
+            </mark>
+          ) : (
+            part
+          )
+        )}
+      </span>
+    );
+  };
+
+  const handleChange = (event, isExpanded) => {
+    setExpanded(isExpanded);
   };
 
   return (
-    <Box sx={{ mb: 2 }}>
-      <Box sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer', flexWrap: 'wrap', gap: 2 }} onClick={handleToggle}>
-        <Typography variant="h6" sx={{ color: 'white', textAlign: 'left' }}>
-          {category}
-        </Typography>
-        <IconButton>
-          <ExpandMoreIcon
-            sx={{
-              color: 'white',
-              transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)',
-              transition: 'transform 0.3s ease',
-            }}
-          />
-        </IconButton>
-      </Box>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, mt: 1 }}>
-    {items.map((item) => (
-      <Button
-        key={item}
-        variant={selectedItems.includes(item) ? 'contained' : 'outlined'}
-        color="primary"
-        onClick={() => handleItemClick(item)}
-        sx={{
-          textTransform: 'capitalize',
-          minWidth: '150px',
-          transition: 'background-color 0.3s ease',
-          color: 'white',
+    <Accordion 
+      expanded={expanded} 
+      onChange={handleChange}
+      sx={{
+        backgroundColor: '#04021b',
+        color: 'white',
+        mb: 2,
+        '&:before': {
+          display: 'none',
+        },
+      }}
+    >
+      <AccordionSummary
+        expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
+        aria-controls={`${category}-content`}
+        id={`${category}-header`}
+        sx={{ 
+          backgroundColor: '#04021b', 
+          color: '#00000',
+          '&.Mui-expanded': {
+            backgroundColor: '#0c0829',
+          }
         }}
       >
-        {item}
-      </Button>
-    ))}
-  </Box>
-</Collapse>
-
-    </Box>
+        <Typography variant="h6">{category}</Typography>
+      </AccordionSummary>
+      <AccordionDetails>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+          {items.map((item) => (
+            <Button
+              key={item}
+              variant={selectedItems.includes(item) ? 'contained' : 'outlined'}
+              color="primary"
+              onClick={() => handleItemClick(item)}
+              sx={{
+                textTransform: 'none',
+                color: 'white',
+                borderColor: 'white',
+                '&:hover': {
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                },
+              }}
+            >
+              {highlightMatchingText(item, searchTerm)}
+            </Button>
+          ))}
+        </Box>
+      </AccordionDetails>
+    </Accordion>
   );
 };
 

@@ -76,8 +76,7 @@ const getRandomWord = (type) => {
   Cubism revolutionized European painting by presenting multiple viewpoints simultaneously.
   Art Nouveau's organic forms and intricate patterns adorn architecture and decorative arts.
   The bold colors and primitive style of Fauvism shocked the art world in the early 20th century.
-  
-`;
+  `;
 
   const doc = nlp(corpus);
   let words;
@@ -98,67 +97,84 @@ const getRandomWord = (type) => {
 
   return getRandomElement(words);
 };
-const artStyles = [
-    'concept art', 'digital illustration', 'oil painting', 'acrylic painting',
-    'painterly style', 'tempera', 'watercolor', 'gouache', 'ink illustration',
-    'line drawing', 'pen and ink', 'ligne claire', 'sketch', 'charcoal drawing',
-    'animation art', 'daguerreotype', 'infographic', 'technical drawing', 'CGI'
-  ];
-  
-  const compositions = [
-    'extreme close-up', 'close-up', 'medium close-up', 'medium shot',
-    'cowboy shot', 'medium full shot', 'full shot', 'wide shot', 'extreme wide shot'
-  ];
-  
-  const colorSchemes = [
-    'vivid colors', 'vibrant colors', 'cinecolor', 'desaturated', 'cold colours',
-    'warm colors', 'muted colors', 'muted tones', 'tonal colors', 'monochromatic',
-    'complementary colors', 'split-complementary', 'achromatic', 'analogous colors',
-    'triadic colors', 'tetradic colors', 'polychromatic'
-  ];
-  
-  const visualTechniques = [
-    'stencil volume shadows', 'lumen reflections', 'linear render',
-    'physically based render', 'straightline render', 'low contrast', 'high contrast',
-    'symmetric eyes', 'detailed ultra-realistic eyes', 'curvaceous forms',
-    'proportional figure', 'realistic proportions', 'realistic skin', 'dynamic pose'
-  ];
-  
-  const subjects = [
-    () => `A ${getRandomWord('Adjective')} ${getRandomWord('Noun')}`,
-    () => `The ${getRandomWord('Noun')} of ${getRandomWord('Noun')}`,
-    () => `${getRandomWord('Adjective')} ${getRandomWord('Noun')}s`,
-    () => `A ${getRandomElement(['1/4', '1/2', '3/4', 'full body'])} portrait of a ${getRandomWord('Adjective')} ${getRandomWord('Noun')}`,
-  ];
-  
-  const actions = [
-    () => getRandomWord('Verb'),
-    () => `${getRandomWord('Verb')}s through`,
-    () => `${getRandomWord('Verb')}s with`,
-    () => `emerges from`,
-    () => `transforms into`,
-  ];
-  
-  const objects = [
-    () => `${getRandomWord('Adjective')} ${getRandomWord('Noun')}s`,
-    () => `the realm of ${getRandomWord('Noun')}`,
-    () => `${getRandomWord('Adjective')} ${getRandomWord('Noun')} patterns`,
-    () => `a landscape of ${getRandomWord('Noun')}s`,
-  ];
-  
-  const modifiers = [
-    () => `in the style of ${getRandomElement(artStyles)}`,
-    () => `using a ${getRandomElement(compositions)} composition`,
-    () => `with ${getRandomElement(colorSchemes)}`,
-    () => `featuring ${getRandomElement(visualTechniques)}`,
-    () => `inspired by ${getRandomWord('Adjective')} ${getRandomWord('Noun')}`,
-  ];
-export const generateRandomSentence = () => {
-    const subject = getRandomElement(subjects)();
-    const action = getRandomElement(actions)();
-    const object = getRandomElement(objects)();
-    const modifier1 = getRandomElement(modifiers)();
-    const modifier2 = getRandomElement(modifiers)();
 
-    return `${subject} ${action} ${object}, ${modifier1} and ${modifier2}.`;
+const artStyles = [
+  'concept art', 'digital illustration', 'oil painting', 'acrylic painting',
+  'painterly style', 'tempera', 'watercolor', 'gouache', 'ink illustration',
+  'line drawing', 'pen and ink', 'ligne claire', 'sketch', 'charcoal drawing',
+  'animation art', 'daguerreotype', 'infographic', 'technical drawing', 'CGI'
+];
+
+const compositions = [
+  'extreme close-up', 'close-up', 'medium close-up', 'medium shot',
+  'cowboy shot', 'medium full shot', 'full shot', 'wide shot', 'extreme wide shot'
+];
+
+const colorSchemes = [
+  'vivid colors', 'vibrant colors', 'cinecolor', 'desaturated', 'cold colours',
+  'warm colors', 'muted colors', 'muted tones', 'tonal colors', 'monochromatic',
+  'complementary colors', 'split-complementary', 'achromatic', 'analogous colors',
+  'triadic colors', 'tetradic colors', 'polychromatic'
+];
+
+const visualTechniques = [
+  'stencil volume shadows', 'lumen reflections', 'linear render',
+  'physically based render', 'straightline render', 'low contrast', 'high contrast',
+  'symmetric eyes', 'detailed ultra-realistic eyes', 'curvaceous forms',
+  'proportional figure', 'realistic proportions', 'realistic skin', 'dynamic pose'
+];
+
+const mathematicalTerms = [
+  'Fibonacci Sequence', 'Golden Ratio', 'Mandelbrot Set', 'Sierpinski Triangle',
+  'Fractal', 'Hyperbolic Geometry', 'Non-Euclidean Geometry', 'Klein Bottle',
+  'Möbius Strip', 'Cellular Automata', 'Circle Inversion', 'Affine Transformation',
+  'Chaotic Attractor', 'Hypercomplex Fractal', 'Celtic Knot', 'Penrose Tiling',
+  'Tessellation', 'Spirograph Pattern', 'Recursion', 'Turing Pattern',
+  'Cantor Dust', 'Fractal Flame', 'Polytope', 'Poincaré Disk', 'Voronoi Diagram',
+  'Symmetry Group', 'Hyperbolic Paraboloid', 'Bezier Curve', 'Lissajous Curve',
+  'Self-avoiding Walk', 'Hexaflexagon'
+];
+
+const subjects = [
+  () => `A ${getRandomWord('Adjective')} ${getRandomWord('Noun')}`,
+  () => `The ${getRandomWord('Noun')} of ${getRandomWord('Noun')}`,
+  () => `${getRandomWord('Adjective')} ${getRandomWord('Noun')}s`,
+  () => `A ${getRandomElement(['1/4', '1/2', '3/4', 'full body'])} portrait of a ${getRandomWord('Adjective')} ${getRandomWord('Noun')}`,
+  () => `The ${getRandomElement(mathematicalTerms)}`,
+];
+
+const actions = [
+  () => getRandomWord('Verb'),
+  () => `${getRandomWord('Verb')}s through`,
+  () => `${getRandomWord('Verb')}s with`,
+  () => `emerges from`,
+  () => `transforms into`,
+  () => `iterates through`,
+];
+
+const objects = [
+  () => `${getRandomWord('Adjective')} ${getRandomWord('Noun')}s`,
+  () => `the realm of ${getRandomWord('Noun')}`,
+  () => `${getRandomWord('Adjective')} ${getRandomWord('Noun')} patterns`,
+  () => `a landscape of ${getRandomWord('Noun')}s`,
+  () => `the structure of a ${getRandomElement(mathematicalTerms)}`,
+];
+
+const modifiers = [
+  () => `in the style of ${getRandomElement(artStyles)}`,
+  () => `using a ${getRandomElement(compositions)} composition`,
+  () => `with ${getRandomElement(colorSchemes)}`,
+  () => `featuring ${getRandomElement(visualTechniques)}`,
+  () => `inspired by ${getRandomWord('Adjective')} ${getRandomWord('Noun')}`,
+  () => `based on the principles of ${getRandomElement(mathematicalTerms)}`,
+];
+
+export const generateRandomSentence = () => {
+  const subject = getRandomElement(subjects)();
+  const action = getRandomElement(actions)();
+  const object = getRandomElement(objects)();
+  const modifier1 = getRandomElement(modifiers)();
+  const modifier2 = getRandomElement(modifiers)();
+
+  return `${subject} ${action} ${object}, ${modifier1} and ${modifier2}.`;
 };

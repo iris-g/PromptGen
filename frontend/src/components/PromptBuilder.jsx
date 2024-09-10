@@ -24,6 +24,14 @@ const initialState = {
   selectedItems: [],
   chaos: '',
   style: '',
+  // New parameters
+  quality: '',
+  seed: '',
+  stop: '',
+  tile: false,
+  imageWeight: '',
+  niji: '',
+  repeat: '',
 };
 
 const generatePrompt = (state) => {
@@ -39,7 +47,14 @@ const generatePrompt = (state) => {
     selectedItems,
     remove,
     chaos,
-    style
+    style,
+    quality,
+    seed,
+    stop,
+    tile,
+    imageWeight,
+    niji,
+    repeat
   } = state;
 
   const weightText = weight !== 1.0 ? `::${weight}` : '';
@@ -52,9 +67,16 @@ const generatePrompt = (state) => {
   const itemsText = selectedItems.length > 0 ? ` ${selectedItems.join(', ')}` : '';
   const chaosText = chaos ? ` --chaos ${chaos}` : '';
   const styleText = style ? ` --style ${style}` : '';
+  const qualityText = quality ? ` --quality ${quality}` : '';
+  const seedText = seed ? ` --seed ${seed}` : '';
+  const stopText = stop ? ` --stop ${stop}` : '';
+  const tileText = tile ? ' --tile' : '';
+  const imageWeightText = imageWeight ? ` --iw ${imageWeight}` : '';
+  const nijiText = niji ? ` --niji ${niji}` : '';
+  const repeatText = repeat ? ` --repeat ${repeat}` : '';
   
   const updatedText = customText ? `${customText}${weightText}${itemsText}` : `${itemsText}`;
-  return `${imageURL ? `${imageURL} ` : ''}${updatedText}${aspectRatioText}${stylizeText}${weirdText}${srefText}${versionText}${removeText}${chaosText}${styleText}`.trim();
+  return `${imageURL ? `${imageURL} ` : ''}${updatedText}${aspectRatioText}${stylizeText}${weirdText}${srefText}${versionText}${removeText}${chaosText}${styleText}${qualityText}${seedText}${stopText}${tileText}${imageWeightText}${nijiText}${repeatText}`.trim();
 };
 
 function reducer(state, action) {
@@ -69,38 +91,14 @@ function reducer(state, action) {
         : [...state.selectedItems, action.item];
       return { ...state, selectedItems: updatedItems };
     }
+    case 'TOGGLE_SWITCH':
+      return { ...state, [action.field]: !state[action.field] };
     case 'RESET':
       return initialState;
     default:
       return state;
   }
 }
-const Footer = () => {
-  return (
-    <Box 
-      component="footer" 
-      sx={{ 
-        py: 2, 
-        px: 2, 
-        mt: 'auto', 
-        color: 'white', 
-        display: 'flex', 
-        justifyContent: 'left', 
-        gap: 2, 
-        alignItems: 'center', // Vertically centers items if they are on the same line
-      }}
-    >
-      <Typography variant="body2" color="white">
-        © 2024 Unique AI Prompt Generator. All rights reserved.
-      </Typography>
-
-      <div> | </div>
-      <Link href="/privacy" display={'inline'} color="inherit" underline="hover">
-        Privacy Policy
-      </Link>
-    </Box>
-  );
-};
 
 const PromptBuilder = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -116,11 +114,24 @@ const PromptBuilder = () => {
 
   useEffect(() => {
     debouncedUpdatePrompt(state);
-  }, [state.customText, state.weight, state.imageURL, state.aspectRatio, state.stylize, state.weird, state.sref, state.version, state.selectedItems, state.remove, state.chaos, state.style]);
+  }, [
+    state.customText, state.weight, state.imageURL, state.aspectRatio, 
+    state.stylize, state.weird, state.sref, state.version, 
+    state.selectedItems, state.remove, state.chaos, state.style,
+    state.quality, state.seed, state.stop, state.tile, 
+    state.imageWeight, state.niji, state.repeat
+  ]);
 
   const handleFieldChange = (field) => (event) => {
     dispatch({ type: 'UPDATE_FIELD', field, value: event.target.value });
   };
+
+  const handleSwitchChange = (field) => () => {
+    dispatch({ type: 'TOGGLE_SWITCH', field });
+  };
+
+
+
 
   const handleItemClick = (item) => {
     dispatch({ type: 'TOGGLE_ITEM', item });
@@ -228,14 +239,18 @@ const PromptBuilder = () => {
           </Box>
         </Box>
 
-        <ParametersAccordion state={state} handleFieldChange={handleFieldChange} />
+        <ParametersAccordion 
+        state={state} 
+        handleFieldChange={handleFieldChange}
+        handleSwitchChange={handleSwitchChange}
+      />
 
         <Box className="theme-manager-box" sx={{ mt: 4 }}>
           <ThemeManager selectedItems={state.selectedItems} handleItemClick={handleItemClick} />
         </Box>  
 
         <Box sx={{ py: 6 }} />
-        <Footer />
+       
     
     
     </Box>

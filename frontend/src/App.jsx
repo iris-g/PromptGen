@@ -1,5 +1,5 @@
 import React from 'react';
-import { CssBaseline, ThemeProvider, createTheme, Box } from '@mui/material';
+import { CssBaseline, ThemeProvider, createTheme, Box, Typography, Link } from '@mui/material';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PromptBuilder from './components/PromptBuilder';
 import ImageGallery from './components/ImageGallery.jsx';
@@ -16,6 +16,33 @@ const theme = createTheme({
   },
 });
 
+const Footer = () => {
+  return (
+    <Box
+      component="footer"
+      sx={{
+        py: 2,
+        px: 2,
+        mt: 'auto',
+        color: 'white',
+        display: 'flex',
+        justifyContent: 'left',
+        gap: 2,
+        alignItems: 'center',
+        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+      }}
+    >
+      <Typography variant="body2" color="white">
+        © 2024 Unique AI Prompt Generator. All rights reserved.
+      </Typography>
+      <div> | </div>
+      <Link href="/privacy" display={'inline'} color="inherit" underline="hover">
+        Privacy Policy
+      </Link>
+    </Box>
+  );
+};
+
 function App() {
   return (
     <Router>
@@ -24,21 +51,31 @@ function App() {
         <Box sx={{ display: 'flex', height: '100vh', overflow: 'hidden' }}>
           <SideMenu />
           <Box 
-            component="main" 
             sx={{ 
-              flexGrow: 3, 
-              p: { xs: 1, sm: 2, md: 3 }, // Responsive padding
-              boxSizing: 'border-box',
-              overflowY: 'auto', 
-              ml: 0, // Remove left margin
+              flexGrow: 1, 
+              display: 'flex',
+              flexDirection: 'column',
+              height: '100vh',
+              overflow: 'hidden',
             }}
           >
-            <Routes>
-              <Route path="/" element={<PromptBuilder />} />
-              <Route path="/imagegallery" element={<ImageGallery />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/privacy" element={<PrivacyPolicy />} />
-            </Routes>
+            <Box 
+              component="main" 
+              sx={{ 
+                flexGrow: 1, 
+                p: { xs: 1, sm: 2, md: 3 },
+                boxSizing: 'border-box',
+                overflowY: 'auto', 
+              }}
+            >
+              <Routes>
+                <Route path="/" element={<PromptBuilder />} />
+                <Route path="/imagegallery" element={<ImageGallery />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/privacy" element={<PrivacyPolicy />} />
+              </Routes>
+            </Box>
+            <Footer />
           </Box>
         </Box>
       </ThemeProvider>
