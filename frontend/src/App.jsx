@@ -2,6 +2,7 @@ import React from 'react';
 import { CssBaseline, ThemeProvider, createTheme, Box, Typography, Link } from '@mui/material';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PromptBuilder from './components/PromptBuilder';
+import Signup from './components/Signup.jsx';
 import ImageGallery from './components/ImageGallery.jsx';
 import PrivacyPolicy from './components/privacy-policy.jsx';
 import About from './components/About.jsx';
@@ -72,6 +73,7 @@ function App() {
                 <Route path="/" element={<PromptBuilder />} />
                 <Route path="/imagegallery" element={<ImageGallery />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/signup" element={<Signup />} />
                 <Route path="/privacy" element={<PrivacyPolicy />} />
               </Routes>
             </Box>

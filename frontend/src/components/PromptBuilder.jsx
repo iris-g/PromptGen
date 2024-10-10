@@ -108,7 +108,7 @@ const PromptBuilder = () => {
     debounce((newState) => {
       const generatedPrompt = generatePrompt(newState);
       dispatch({ type: 'UPDATE_PROMPT', value: generatedPrompt });
-    }, 300),
+    }, 200),
     []
   );
 
@@ -167,10 +167,53 @@ const PromptBuilder = () => {
     }}
   >
 
-        <Box component="div" className="generated-prompt">
-          <Header logo={logo} />
-        </Box>
+    {/* Main headline and login/signup buttons aligned */}
+    <Box component="div" sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 4 }}>
+      <Header logo={logo} />
+      
+      <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+        <Tooltip title="Login to save your custom prompts, view history, and more">
+          <Button 
+            variant="contained" 
+            href="/login"
+            sx={{
+              backgroundColor: '#00A2FF', 
+              color: '#ffffff',
+              borderRadius: '25px',
+              px: 3,
+              py: 1.5,
+              boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
+              '&:hover': {
+                backgroundColor: '#008CDB', // Slightly darker cyan on hover
+              },
+            }}
+          >
+            LOGIN
+          </Button>
+        </Tooltip>
 
+        <Tooltip title="Sign up for an account">
+          <Button 
+            variant="outlined" 
+            href="/signup"
+            sx={{
+              color: '#00A2FF', // Border and text in cyan/blue
+              borderColor: '#00A2FF',
+              borderRadius: '25px',
+              px: 3,
+              py: 1.5,
+              boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
+              '&:hover': {
+                borderColor: '#008CDB', // Darker cyan on hover for border
+                backgroundColor: 'rgba(0, 162, 255, 0.1)', // Subtle background color
+              },
+            }}
+          >
+            SIGN UP
+          </Button>
+        </Tooltip>
+      </Box>
+    </Box>
         <CreativeTips />
 
         <Box component="div" className="generated-prompt" sx={{ display: 'flex', alignItems: 'center', gap: 2}}>
